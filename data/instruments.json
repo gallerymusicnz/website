@@ -1,109 +1,109 @@
 {
   "instruments": [
     {
-      "emoji": "🎼",
       "name": "Music Basics",
-      "description": "A pre-instrumental programme introducing children to music fundamentals through singing, movement, rhythm games, and basic notation. A fun and engaging first step into the world of music.",
+      "emoji": "🎼",
       "summary": "Ages 5–6. A fun introduction to music fundamentals.",
+      "description": "A pre-instrumental programme introducing children to music fundamentals through singing, movement, rhythm games, and basic notation. A fun and engaging first step into the world of music.",
       "tag": "Ages 5–6",
       "free": false,
       "show_on_home": true
     },
     {
-      "emoji": "🎻",
       "name": "Violin",
-      "description": "Learn violin in a supportive group setting. Students develop bowing technique, posture, and music reading skills while playing together with their peers.",
-      "summary": "Ages 7+. Learn violin in a supportive group setting.",
-      "tag": "Ages 7+",
-      "free": false,
-      "show_on_home": true
-    },
-    {
       "emoji": "🎻",
+      "summary": "Ages 7+. Learn violin in a supportive group setting.",
+      "description": "Learn violin in a supportive group setting. Students develop bowing technique, posture, and music reading skills while playing together with their peers.",
+      "tag": "Ages 7+",
+      "free": false,
+      "show_on_home": true
+    },
+    {
       "name": "Cello",
-      "description": "Explore the rich tones of the cello in group lessons. Cellos are available for hire ($100/year) for students who don't yet have their own instrument.",
+      "emoji": "🎻",
       "summary": "Ages 7+. Cellos available for hire.",
+      "description": "Explore the rich tones of the cello in group lessons. Cellos are available for hire ($100/year) for students who don't yet have their own instrument.",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
     },
     {
-      "emoji": "🎹",
       "name": "Keyboard",
+      "emoji": "🎹",
+      "summary": "Ages 7+. Waitlists may apply.",
       "description": "Build keyboard skills including reading music, chord progressions, and playing melodies. A popular class — waitlists may apply.",
-      "summary": "Ages 7+. Waitlists may apply.",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
     },
     {
-      "emoji": "🎸",
       "name": "Guitar",
-      "description": "Learn acoustic guitar basics including chords, strumming patterns, and simple songs. A very popular class — waitlists may apply.",
+      "emoji": "🎸",
       "summary": "Ages 7+. Waitlists may apply.",
+      "description": "Learn acoustic guitar basics including chords, strumming patterns, and simple songs. A very popular class — waitlists may apply.",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
     },
     {
-      "emoji": "🪈",
       "name": "Flute",
-      "description": "Develop breath control, tone production, and fingering technique in group flute lessons. Suited to slightly older students who can manage the instrument.",
+      "emoji": "🪈",
       "summary": "Ages 10+. Intermediate-level students welcome.",
+      "description": "Develop breath control, tone production, and fingering technique in group flute lessons. Suited to slightly older students who can manage the instrument.",
       "tag": "Ages 10+",
       "free": false,
       "show_on_home": true
     },
     {
-      "emoji": "🎵",
       "name": "Recorder",
-      "description": "A wonderful first wind instrument. Students learn music reading, breath control, and ensemble playing through the recorder.",
+      "emoji": "🎵",
       "summary": "Ages 6.5+. A great first instrument.",
+      "description": "A wonderful first wind instrument. Students learn music reading, breath control, and ensemble playing through the recorder.",
       "tag": "Ages 6.5+",
       "free": false,
       "show_on_home": true
     },
     {
-      "emoji": "🎺",
       "name": "Trumpet",
+      "emoji": "🎺",
+      "summary": "Ages 8+. Build brass skills.",
       "description": "Build embouchure, breath support, and brass playing skills. Students learn together in an encouraging group environment.",
-      "summary": "Ages 7+. Build brass skills.",
-      "tag": "Ages 7+",
+      "tag": "Ages 8+",
       "free": false,
       "show_on_home": true
     },
     {
-      "emoji": "🥁",
       "name": "Drums",
-      "description": "Develop rhythm, coordination, and percussion skills. Learn to read rhythmic notation and play a variety of styles and patterns.",
+      "emoji": "🥁",
       "summary": "Ages 7+. Develop rhythm and coordination.",
+      "description": "Develop rhythm, coordination, and percussion skills. Learn to read rhythmic notation and play a variety of styles and patterns.",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
     },
     {
-      "emoji": "🎤",
       "name": "Choir",
-      "description": "Open to all Gallery students at no extra cost! Sing together in a fun, supportive group and perform at the annual concert.",
+      "emoji": "🎤",
       "summary": "Free for all Gallery students!",
+      "description": "Open to all Gallery students at no extra cost! Sing together in a fun, supportive group and perform at the annual concert.",
       "tag": "Free!",
       "free": true,
       "show_on_home": true
     },
     {
-      "emoji": "🎶",
       "name": "Pat Sviatko Ensemble",
-      "description": "The Pat Sviatko Ensemble welcomes cello and violin students who have studied for two years and can read music. Develop ensemble skills, collaborative listening, and perform at the annual concert.",
+      "emoji": "🎶",
       "summary": "Cello & violin students with 2+ years experience.",
+      "description": "The Pat Sviatko Ensemble welcomes cello and violin students who have studied for two years and can read music. Develop ensemble skills, collaborative listening, and perform at the annual concert.",
       "tag": "2+ years experience",
       "free": false,
       "show_on_home": false
     },
     {
-      "emoji": "🎶",
       "name": "Orchestra",
-      "description": "The Gallery Community Orchestra is open to all ages at no extra cost. For students with approximately 3 years of prior tuition. See our Community Orchestra page for more details.",
+      "emoji": "🎶",
       "summary": "Free! For students with 3+ years experience.",
+      "description": "The Gallery Community Orchestra is open to all ages at no extra cost. For students with approximately 3 years of prior tuition. See our Community Orchestra page for more details.",
       "tag": "3+ years experience",
       "free": true,
       "show_on_home": false
