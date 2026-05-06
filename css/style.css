@@ -380,8 +380,19 @@ h4 { font-size: var(--fs-lg); }
 }
 
 /* --- Hero Section ---
-   Layered Hutt Valley scene built with SVG silhouette masks:
-   sky → distant hills → foreground hills → riverbank → river. */
+   The Hutt Valley scene is drawn as a single illustrated SVG with
+   perspective: hills frame the left and right edges, the river
+   converges from the foreground toward a vanishing point in the
+   distance. The scene anchors at the bottom of the hero and uses
+   `background-size: cover`, so on narrow phone screens the central
+   river / vanishing point stays in view while the outer hills crop
+   off-screen — the valley still reads as a valley. */
+
+.hero,
+.page-header {
+  --hero-scene: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600' preserveAspectRatio='xMidYMax slice'><defs><linearGradient id='r' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23a3bcc8'/><stop offset='1' stop-color='%23718fa0'/></linearGradient><linearGradient id='m' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2374a87f'/><stop offset='1' stop-color='%23437a55'/></linearGradient><linearGradient id='l' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2376bd7e'/><stop offset='0.5' stop-color='%23448e54'/><stop offset='1' stop-color='%23215633'/></linearGradient><linearGradient id='h' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%237ec483'/><stop offset='0.5' stop-color='%234b975c'/><stop offset='1' stop-color='%23275f3a'/></linearGradient><linearGradient id='b' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23ead09a'/><stop offset='1' stop-color='%23a98745'/></linearGradient><linearGradient id='w' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23a8dbed'/><stop offset='0.4' stop-color='%233aa3d6'/><stop offset='1' stop-color='%23156a9a'/></linearGradient></defs><path d='M0 290 C 200 250 400 270 600 260 C 800 250 1000 275 1200 268 L 1200 380 L 0 380 Z' fill='url(%23r)' opacity='0.85'/><path d='M0 286 C 240 270 480 280 720 274 C 960 268 1100 280 1200 274 L 1200 318 L 0 318 Z' fill='%23ffffff' opacity='0.22'/><path d='M0 600 L 0 360 C 100 326 200 310 320 320 C 440 330 560 358 680 348 C 800 338 920 320 1040 332 C 1140 340 1180 348 1200 348 L 1200 600 Z' fill='url(%23m)' opacity='0.65'/><path d='M0 600 L 0 380 C 50 332 120 302 200 286 C 280 274 360 290 440 308 C 510 322 560 318 590 304 L 600 298 L 605 600 Z' fill='url(%23l)'/><path d='M1200 600 L 1200 380 C 1150 332 1080 302 1000 286 C 920 274 840 290 760 308 C 690 322 640 318 610 304 L 600 298 L 595 600 Z' fill='url(%23h)'/><ellipse cx='150' cy='400' rx='70' ry='14' fill='%23000000' opacity='0.13'/><ellipse cx='320' cy='450' rx='55' ry='12' fill='%23000000' opacity='0.10'/><ellipse cx='480' cy='430' rx='40' ry='9' fill='%23000000' opacity='0.10'/><ellipse cx='1050' cy='400' rx='70' ry='14' fill='%23000000' opacity='0.13'/><ellipse cx='880' cy='450' rx='55' ry='12' fill='%23000000' opacity='0.10'/><ellipse cx='720' cy='430' rx='40' ry='9' fill='%23000000' opacity='0.10'/><path d='M0 600 L 0 480 C 240 472 480 462 600 458 C 720 462 960 472 1200 480 L 1200 600 Z' fill='url(%23b)'/><path d='M590 298 L 610 298 C 615 360 640 425 700 490 L 770 540 L 800 600 L 400 600 L 430 540 L 500 490 C 560 425 585 360 590 298 Z' fill='url(%23w)'/><ellipse cx='620' cy='400' rx='8' ry='1.5' fill='%23ffffff' opacity='0.45'/><ellipse cx='590' cy='460' rx='14' ry='2' fill='%23ffffff' opacity='0.35'/><ellipse cx='640' cy='480' rx='16' ry='2' fill='%23ffffff' opacity='0.4'/><ellipse cx='560' cy='520' rx='22' ry='2.5' fill='%23ffffff' opacity='0.35'/><ellipse cx='660' cy='540' rx='24' ry='2.5' fill='%23ffffff' opacity='0.4'/><ellipse cx='520' cy='580' rx='32' ry='3' fill='%23ffffff' opacity='0.3'/></svg>");
+}
+
 .hero {
   background:
     radial-gradient(ellipse 60% 40% at 82% 6%, rgba(255, 226, 178, 0.55) 0%, rgba(255, 226, 178, 0) 70%),
@@ -405,126 +416,32 @@ h4 { font-size: var(--fs-lg); }
   z-index: 0;
 }
 
-/* Atmospheric haze where sky meets distant hills */
 .hero::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 36%;
-  height: 12%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.32) 55%, rgba(255, 255, 255, 0) 100%);
-  z-index: 0;
-  pointer-events: none;
+  display: none;
 }
 
-/* Decorative shapes container */
+/* The illustrated valley scene fills the hero, anchored at the bottom */
 .hero__decor {
   position: absolute;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
   z-index: 0;
+  background-image: var(--hero-scene);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
 
-/* Distant hills silhouette (Tararua / Remutaka feel) */
-.hero__decor::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 30%;
-  height: 20%;
-  background: linear-gradient(180deg, #93afbf 0%, #7591a3 60%, #607d90 100%);
-  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 200' preserveAspectRatio='none'><path d='M0 200 L0 96 C 110 58 230 86 360 84 C 490 82 620 36 760 60 C 880 80 1020 50 1160 72 C 1290 92 1370 64 1440 80 L1440 200 Z' fill='black'/></svg>") no-repeat center / 100% 100%;
-          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 200' preserveAspectRatio='none'><path d='M0 200 L0 96 C 110 58 230 86 360 84 C 490 82 620 36 760 60 C 880 80 1020 50 1160 72 C 1290 92 1370 64 1440 80 L1440 200 Z' fill='black'/></svg>") no-repeat center / 100% 100%;
-  opacity: 0.85;
-}
-
-/* Mist veil sitting on the distant ridge */
+.hero__decor::before,
 .hero__decor::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 38%;
-  height: 4%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.45) 50%, rgba(255, 255, 255, 0) 100%);
-  filter: blur(3px);
+  display: none;
+  content: none;
 }
 
+/* Old per-band layers no longer used — single SVG handles the scene */
 .hero__band {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-          mask-size: 100% 100%;
-}
-
-/* Soft top-light highlight on each band */
-.hero__band::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0) 40%);
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-/* Foreground hills — rolling, with multiple peaks */
-.hero__band--hills {
-  bottom: 16%;
-  height: 26%;
-  background: linear-gradient(180deg, #6db474 0%, #3f8a4f 55%, #2a6940 100%);
-  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 240' preserveAspectRatio='none'><path d='M0 240 L0 118 C 90 78 180 96 280 104 C 380 112 460 56 560 74 C 660 96 760 132 880 104 C 1000 76 1100 102 1220 88 C 1340 74 1410 96 1440 104 L1440 240 Z' fill='black'/></svg>");
-          mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 240' preserveAspectRatio='none'><path d='M0 240 L0 118 C 90 78 180 96 280 104 C 380 112 460 56 560 74 C 660 96 760 132 880 104 C 1000 76 1100 102 1220 88 C 1340 74 1410 96 1440 104 L1440 240 Z' fill='black'/></svg>");
-}
-
-/* Soft tree/shadow texture on the foreground hill */
-.hero__band--hills::before {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0) 35%),
-    radial-gradient(ellipse at 22% 90%, rgba(0, 60, 30, 0.18) 0%, rgba(0, 60, 30, 0) 30%),
-    radial-gradient(ellipse at 70% 95%, rgba(0, 60, 30, 0.16) 0%, rgba(0, 60, 30, 0) 28%);
-}
-
-/* Riverbank — soft warm gravel/sand */
-.hero__band--valley {
-  bottom: 8%;
-  height: 11%;
-  background: linear-gradient(180deg, #e2c98c 0%, #c9aa66 55%, #a98745 100%);
-  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'><path d='M0 120 L0 50 C 240 30 480 60 720 44 C 960 28 1200 54 1440 38 L1440 120 Z' fill='black'/></svg>");
-          mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'><path d='M0 120 L0 50 C 240 30 480 60 720 44 C 960 28 1200 54 1440 38 L1440 120 Z' fill='black'/></svg>");
-}
-
-.hero__band--valley::before {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0) 40%),
-    radial-gradient(circle at 16% 70%, rgba(255, 255, 255, 0.14) 0 4%, transparent 5%),
-    radial-gradient(circle at 48% 80%, rgba(255, 255, 255, 0.12) 0 3%, transparent 4%),
-    radial-gradient(circle at 82% 65%, rgba(255, 255, 255, 0.14) 0 4%, transparent 5%);
-}
-
-/* River — rippled top edge, gentle current striping */
-.hero__band--river {
-  bottom: 0;
-  height: 13%;
-  background:
-    repeating-linear-gradient(180deg, transparent 0, transparent 12px, rgba(255, 255, 255, 0.07) 12px, rgba(255, 255, 255, 0.07) 14px),
-    linear-gradient(180deg, #4ab4e3 0%, #2391c8 50%, #156a9a 100%);
-  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 140' preserveAspectRatio='none'><path d='M0 140 L0 22 C 180 10 360 30 540 18 C 720 6 900 28 1080 16 C 1260 4 1350 22 1440 14 L1440 140 Z' fill='black'/></svg>");
-          mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 140' preserveAspectRatio='none'><path d='M0 140 L0 22 C 180 10 360 30 540 18 C 720 6 900 28 1080 16 C 1260 4 1350 22 1440 14 L1440 140 Z' fill='black'/></svg>");
-}
-
-.hero__band--river::before {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 25%),
-    radial-gradient(ellipse at 20% 12%, rgba(255, 255, 255, 0.35) 0 1.5%, transparent 2%),
-    radial-gradient(ellipse at 48% 18%, rgba(255, 255, 255, 0.3) 0 1.2%, transparent 1.8%),
-    radial-gradient(ellipse at 76% 10%, rgba(255, 255, 255, 0.35) 0 1.5%, transparent 2%);
-  opacity: 0.85;
+  display: none;
 }
 
 /* Musical note SVG silhouettes */
@@ -537,34 +454,34 @@ h4 { font-size: var(--fs-lg); }
 
 .hero__notes svg {
   position: absolute;
-  opacity: 0.07;
+  opacity: 0.06;
   fill: currentColor;
   color: var(--color-white);
 }
 
 .hero__notes svg:nth-child(1) {
-  top: 18%;
-  right: 8%;
-  width: 108px;
-  height: 108px;
+  top: 14%;
+  right: 6%;
+  width: 96px;
+  height: 96px;
   transform: rotate(-12deg);
-  opacity: 0.08;
+  opacity: 0.07;
 }
 
 .hero__notes svg:nth-child(2) {
-  bottom: 29%;
-  right: 24%;
-  width: 60px;
-  height: 60px;
+  top: 28%;
+  right: 26%;
+  width: 50px;
+  height: 50px;
   transform: rotate(18deg);
   opacity: 0.05;
 }
 
 .hero__notes svg:nth-child(3) {
-  top: 54%;
-  right: 6%;
-  width: 34px;
-  height: 34px;
+  top: 42%;
+  right: 4%;
+  width: 28px;
+  height: 28px;
   transform: rotate(-26deg);
   opacity: 0.04;
 }
@@ -597,6 +514,7 @@ h4 { font-size: var(--fs-lg); }
   color: var(--color-white);
   font-size: var(--fs-3xl);
   margin-bottom: var(--space-md);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .hero p {
@@ -605,6 +523,7 @@ h4 { font-size: var(--fs-lg); }
   margin-bottom: var(--space-xl);
   line-height: var(--lh-normal);
   max-width: 34rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .hero__buttons {
@@ -613,7 +532,7 @@ h4 { font-size: var(--fs-lg); }
   flex-wrap: wrap;
 }
 
-/* Orchestra hero variant — deeper, golden-hour palette */
+/* Orchestra hero variant — same valley scene, deeper sky tint */
 .hero--orchestra {
   background:
     radial-gradient(ellipse 60% 40% at 80% 8%, rgba(255, 218, 160, 0.45) 0%, rgba(255, 218, 160, 0) 70%),
@@ -634,25 +553,6 @@ h4 { font-size: var(--fs-lg); }
   background: radial-gradient(circle, rgba(249, 227, 161, 0.78) 0%, rgba(249, 227, 161, 0.26) 40%, rgba(249, 227, 161, 0) 72%);
 }
 
-.hero--orchestra .hero__decor::before {
-  background: linear-gradient(180deg, #6f8c9a 0%, #547382 100%);
-  opacity: 0.8;
-}
-
-.hero--orchestra .hero__band--hills {
-  background: linear-gradient(180deg, #5a9962 0%, #34653f 100%);
-}
-
-.hero--orchestra .hero__band--valley {
-  background: linear-gradient(180deg, #d8c082 0%, #ad8946 100%);
-}
-
-.hero--orchestra .hero__band--river {
-  background:
-    repeating-linear-gradient(180deg, transparent 0, transparent 12px, rgba(255, 255, 255, 0.07) 12px, rgba(255, 255, 255, 0.07) 14px),
-    linear-gradient(180deg, #4097c4 0%, #1a5f86 100%);
-}
-
 .hero--compact {
   padding: var(--space-2xl) 0 calc(var(--space-2xl) + 20px);
 }
@@ -662,21 +562,6 @@ h4 { font-size: var(--fs-lg); }
   right: 8%;
   width: 180px;
   height: 180px;
-}
-
-.hero--compact::after {
-  bottom: 38%;
-  height: 10%;
-}
-
-.hero--compact .hero__decor::before {
-  bottom: 30%;
-  height: 18%;
-}
-
-.hero--compact .hero__decor::after {
-  bottom: 40%;
-  height: 3%;
 }
 
 .hero--compact .hero__content {
@@ -704,21 +589,6 @@ h4 { font-size: var(--fs-lg); }
 
 .hero--orchestra.hero--compact .hero__buttons {
   justify-content: center;
-}
-
-.hero--compact .hero__band--hills {
-  bottom: 14%;
-  height: 22%;
-}
-
-.hero--compact .hero__band--valley {
-  bottom: 6%;
-  height: 10%;
-}
-
-.hero--compact .hero__band--river {
-  bottom: 0;
-  height: 11%;
 }
 
 .hero--compact .hero__wave {
@@ -1201,28 +1071,8 @@ h4 { font-size: var(--fs-lg); }
   z-index: 0;
 }
 
-/* Atmospheric haze where sky meets distant hills */
 .page-header::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 38%;
-  height: 9%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.32) 55%, rgba(255, 255, 255, 0) 100%);
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Distant hills layer */
-.page-header .hero__decor::before {
-  bottom: 30%;
-  height: 18%;
-}
-
-.page-header .hero__decor::after {
-  bottom: 40%;
-  height: 3%;
+  display: none;
 }
 
 .page-header .container {
@@ -1230,54 +1080,41 @@ h4 { font-size: var(--fs-lg); }
   z-index: 2;
 }
 
-.page-header .hero__band--hills {
-  bottom: 14%;
-  height: 22%;
-}
-
-.page-header .hero__band--valley {
-  bottom: 6%;
-  height: 10%;
-}
-
-.page-header .hero__band--river {
-  bottom: 0;
-  height: 11%;
-}
-
 .page-header .hero__notes svg:nth-child(1) {
-  top: 18%;
-  right: 9%;
-  width: 82px;
-  height: 82px;
+  top: 14%;
+  right: 7%;
+  width: 72px;
+  height: 72px;
 }
 
 .page-header .hero__notes svg:nth-child(2) {
-  bottom: 22%;
+  top: 36%;
   right: 24%;
-  width: 44px;
-  height: 44px;
+  width: 38px;
+  height: 38px;
 }
 
 .page-header .hero__notes svg:nth-child(3) {
   top: 56%;
-  right: 6%;
-  width: 24px;
-  height: 24px;
+  right: 5%;
+  width: 22px;
+  height: 22px;
 }
 
 .page-header h1 {
   color: var(--color-white);
   position: relative;
   z-index: 1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .page-header p {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.92);
   max-width: 600px;
   margin: var(--space-sm) auto 0;
   position: relative;
   z-index: 1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Wavy bottom edge for page headers */
@@ -1836,37 +1673,6 @@ h4 { font-size: var(--fs-lg); }
     right: -10px;
   }
 
-  .hero::after {
-    bottom: 36%;
-    height: 10%;
-  }
-
-  .hero__decor::before {
-    bottom: 28%;
-    height: 18%;
-    opacity: 0.78;
-  }
-
-  .hero__decor::after {
-    bottom: 38%;
-    height: 3%;
-  }
-
-  .hero__band--hills {
-    bottom: 14%;
-    height: 22%;
-  }
-
-  .hero__band--valley {
-    bottom: 7%;
-    height: 10%;
-  }
-
-  .hero__band--river {
-    bottom: 0;
-    height: 11%;
-  }
-
   .hero__content {
     padding: var(--space-md) 0 var(--space-2xl);
   }
@@ -1881,36 +1687,6 @@ h4 { font-size: var(--fs-lg); }
     height: 140px;
     top: 18px;
     right: -6px;
-  }
-
-  .page-header::after,
-  .hero--compact::after {
-    bottom: 38%;
-    height: 8%;
-  }
-
-  .page-header .hero__decor::before,
-  .hero--compact .hero__decor::before {
-    bottom: 28%;
-    height: 16%;
-  }
-
-  .page-header .hero__band--hills,
-  .hero--compact .hero__band--hills {
-    bottom: 12%;
-    height: 18%;
-  }
-
-  .page-header .hero__band--valley,
-  .hero--compact .hero__band--valley {
-    bottom: 5%;
-    height: 9%;
-  }
-
-  .page-header .hero__band--river,
-  .hero--compact .hero__band--river {
-    bottom: 0;
-    height: 10%;
   }
 
   .hero h1 {
@@ -1980,36 +1756,9 @@ h4 { font-size: var(--fs-lg); }
     padding: var(--space-2xl) 0;
   }
 
-  .page-header .hero__band--valley,
-  .hero--compact .hero__band--valley {
-    bottom: 4%;
-    height: 9%;
-  }
-
-  .page-header .hero__band--river,
-  .hero--compact .hero__band--river {
-    bottom: 0;
-    height: 10%;
-  }
-
   .page-header__wave,
   .hero--compact .hero__wave {
     height: 14px;
-  }
-
-  .hero__band--hills {
-    bottom: 13%;
-    height: 20%;
-  }
-
-  .hero__band--valley {
-    bottom: 6%;
-    height: 9%;
-  }
-
-  .hero__band--river {
-    bottom: 0;
-    height: 11%;
   }
 
   .hero__wave {
