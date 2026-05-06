@@ -69,6 +69,57 @@ content:
         type: string
         description: "Small reminder shown under the term dates table"
 
+  - name: home_fees
+    label: "🏠 Home — Fees & Funding"
+    type: file
+    path: data/fees.json
+    format: json
+    fields:
+      - name: title
+        label: Section title
+        type: string
+        description: "Heading shown above this section, e.g. Fees & Funding"
+      - name: intro
+        label: Intro paragraph
+        type: text
+        description: "Short paragraph shown under the heading."
+      - name: fee_box
+        label: Highlighted fee box (left side)
+        type: object
+        fields:
+          - name: label
+            label: Top label
+            type: string
+            description: "e.g. Annual Tuition Fee"
+          - name: amount
+            label: Amount
+            type: string
+            description: "Big number, e.g. $210"
+          - name: period
+            label: Period text
+            type: string
+            description: "Small text under the amount, e.g. per student, per year (all four terms)"
+          - name: items
+            label: Bullet points inside the box
+            type: string
+            list: true
+            description: "One bullet per line. Each appears with a tick beside it."
+      - name: notes
+        label: Notes (right side)
+        type: object
+        list:
+          collapsible: true
+          collapsed: false
+          summary: "{heading}"
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+            description: "e.g. Sibling discounts"
+          - name: body
+            label: Body text
+            type: text
+
   - name: home_site_settings
     label: "🏠 Home — Stats & Site Settings"
     type: file

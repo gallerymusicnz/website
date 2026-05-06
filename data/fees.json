@@ -1,0 +1,34 @@
+{
+  "title": "Fees & Funding",
+  "intro": "Our classes are subsidised through the Ministry of Education's Out-of-Hours Music Programme, keeping costs accessible for all families.",
+  "fee_box": {
+    "label": "Annual Tuition Fee",
+    "amount": "$210",
+    "period": "per student, per year (all four terms)",
+    "items": [
+      "One instrument class per week (30 mins)",
+      "All term dates included in the fee",
+      "Choir is free — no extra charge",
+      "Subsidised by the Ministry of Education",
+      "Managed via ClubHub for easy payments"
+    ]
+  },
+  "notes": [
+    {
+      "heading": "Subsidised programme",
+      "body": "Gallery Music Centre is part of the Ministry of Education's out-of-hours programme. This means classes are kept at a very low cost compared to private music tuition."
+    },
+    {
+      "heading": "Sibling discounts",
+      "body": "We welcome whole families — please contact us to discuss fees if you have multiple children enrolling."
+    },
+    {
+      "heading": "Waitlists",
+      "body": "Keyboard and guitar classes often have significant waitlists. We recommend getting in touch early. Orchestra and pre-instrumental classes may have spaces available."
+    },
+    {
+      "heading": "Payments",
+      "body": "Fees are managed through ClubHub. Please keep your details up to date and use ClubHub to manage your family contributions."
+    }
+  ]
+}

@@ -95,6 +95,34 @@
     el.removeAttribute('hidden');
   }
 
+  /* --- Fees & Funding (home page) --- */
+  function renderFees(data) {
+    var titleEl = document.getElementById('fees-title');
+    var introEl = document.getElementById('fees-intro');
+    var box = document.getElementById('fee-box');
+    var notes = document.getElementById('fee-notes');
+    if (titleEl && data.title) titleEl.textContent = data.title;
+    if (introEl && data.intro) introEl.textContent = data.intro;
+    if (box && data.fee_box) {
+      var fb = data.fee_box;
+      var items = (fb.items && fb.items.length)
+        ? '<ul class="fee-box__list">' + fb.items.map(function (i) {
+            return '<li>' + escapeHTML(i) + '</li>';
+          }).join('') + '</ul>'
+        : '';
+      box.innerHTML =
+        '<div class="fee-box__title">' + escapeHTML(fb.label || '') + '</div>' +
+        '<div class="fee-box__amount">' + escapeHTML(fb.amount || '') + '</div>' +
+        '<div class="fee-box__period">' + escapeHTML(fb.period || '') + '</div>' +
+        items;
+    }
+    if (notes && data.notes) {
+      notes.innerHTML = data.notes.map(function (n) {
+        return '<h4>' + escapeHTML(n.heading || '') + '</h4><p>' + escapeHTML(n.body || '') + '</p>';
+      }).join('');
+    }
+  }
+
   /* --- Stat Cards (home page) --- */
   function renderStats(data) {
     var container = document.getElementById('key-stats');
@@ -147,6 +175,7 @@
       classInstruments:   !!document.getElementById('class-instruments'),
       faqs:               !!document.getElementById('faq-list'),
       stats:              !!document.getElementById('key-stats'),
+      fees:               !!document.getElementById('fee-box'),
       orchestraDetails:   !!document.getElementById('orchestra-details-list')
     };
 
@@ -156,6 +185,7 @@
     if (needs.committee)        fetchJSON('committee.json').then(renderCommittee).catch(console.error);
     if (needs.faqs)             fetchJSON('faqs.json').then(renderFAQs).catch(console.error);
     if (needs.stats)            fetchJSON('site-settings.json').then(renderStats).catch(console.error);
+    if (needs.fees)             fetchJSON('fees.json').then(renderFees).catch(console.error);
     if (needs.orchestraDetails) fetchJSON('orchestra-details.json').then(renderOrchestraDetails).catch(console.error);
     if (needs.homeInstruments || needs.classInstruments) {
       fetchJSON('instruments.json').then(function (data) {
