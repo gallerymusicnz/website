@@ -134,7 +134,6 @@
     var steps = document.getElementById('enrolment-steps');
     var contactHeading = document.getElementById('enrolment-contact-heading');
     var contactItems = document.getElementById('enrolment-contact-items');
-    var clubhub = document.getElementById('enrolment-clubhub');
 
     if (titleEl && data.title) titleEl.textContent = data.title;
     if (introEl && data.intro) introEl.textContent = data.intro;
@@ -167,17 +166,6 @@
       }).join('');
     }
 
-    if (clubhub && data.clubhub) {
-      var buttonUrl = data.clubhub.button_url || '#';
-      var buttonTitle = data.clubhub.button_url ? '' : ' title="ClubHub link coming soon"';
-      clubhub.innerHTML =
-        '<div class="clubhub-banner__text">' +
-        '<strong>' + escapeHTML(data.clubhub.heading || '') + '</strong> ' +
-        escapeHTML(data.clubhub.text || '') +
-        '</div>' +
-        '<a href="' + escapeHTML(buttonUrl) + '" class="btn"' + buttonTitle + '>' +
-        escapeHTML(data.clubhub.button_text || 'ClubHub') + ' &rarr;</a>';
-    }
   }
 
   /* --- Stat Cards (home page) --- */
