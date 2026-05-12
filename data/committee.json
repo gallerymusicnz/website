@@ -1,24 +1,36 @@
 {
   "committee": [
     {
-      "name": "Committee Member",
-      "role": "Chairperson",
-      "bio": ""
+      "name": "Nicky Sievert",
+      "role": "Chairperson"
     },
     {
-      "name": "Committee Member",
-      "role": "Secretary",
-      "bio": ""
+      "name": "Zoe Gilmore",
+      "role": "Secretary"
     },
     {
-      "name": "Committee Member",
-      "role": "Treasurer",
-      "bio": ""
+      "name": "Helen Housden",
+      "role": "Committee Member"
     },
     {
-      "name": "Committee Member",
-      "role": "Gallery Coordinator",
-      "bio": ""
+      "name": "Kiran Rajan",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Kiri Sharpe",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Nicky Bank",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Sukrit Patil",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Susant Acharya",
+      "role": "Committee Member"
     }
   ]
 }
