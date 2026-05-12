@@ -29,24 +29,18 @@
     "heading": "Get in touch",
     "items": [
       {
-        "icon": "✉",
+        "icon": "\u2709",
         "label": "Email",
         "value": "gallerymusiccentre@gmail.com",
         "url": "mailto:gallerymusiccentre@gmail.com"
       },
       {
-        "icon": "☎",
-        "label": "Mobile",
-        "value": "021 177 0072",
-        "url": "tel:021-177-0072"
-      },
-      {
-        "icon": "⚲",
+        "icon": "\u26b2",
         "label": "Location",
         "value": "Dyer Street School\n9 Dyer Street, Lower Hutt"
       },
       {
-        "icon": "📅",
+        "icon": "\ud83d\udcc5",
         "label": "When",
         "value": "Saturday mornings during school terms"
       }
