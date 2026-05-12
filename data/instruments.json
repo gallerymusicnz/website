@@ -3,7 +3,6 @@
     {
       "name": "Music Basics",
       "emoji": "🎼",
-      "summary": "Ages 5–6",
       "description": "A pre-instrumental programme introducing children to music fundamentals through singing, movement, rhythm games, percussion & ukulele. A fun and engaging first step into the world of music.",
       "tag": "Ages 5–6",
       "free": false,
@@ -12,7 +11,6 @@
     {
       "name": "Violin",
       "emoji": "🎻",
-      "summary": "Ages 7+",
       "description": "Learn violin in a supportive group setting. Students develop good bowing technique, posture, and music reading skills while playing together with their peers.",
       "tag": "Ages 7+",
       "free": false,
@@ -21,7 +19,6 @@
     {
       "name": "Cello",
       "emoji": "🎻",
-      "summary": "Ages 7+",
       "description": "Explore the rich, warm tones of the cello in fun small group lessons (maximum 4 per class). Cellos are available for hire ($100/year).",
       "tag": "Ages 7+",
       "free": false,
@@ -30,7 +27,6 @@
     {
       "name": "Keyboard",
       "emoji": "🎹",
-      "summary": "Ages 7+",
       "description": "Build keyboard skills including reading music, playing melodies, and developing finger coordination. A popular class — waitlists may apply.",
       "tag": "Ages 7+",
       "free": false,
@@ -39,7 +35,6 @@
     {
       "name": "Guitar",
       "emoji": "🎸",
-      "summary": "Ages 7+",
       "description": "Learn classical guitar technique: plucking, strumming, reading music and learning beautiful tunes.",
       "tag": "Ages 7+",
       "free": false,
@@ -47,7 +42,6 @@
     },
     {
       "name": "Flute",
-      "summary": "Ages 9+",
       "description": "A beautiful, sweet sounding, silver wind instrument. Enjoy developing tone, breathing and fingering skills in fun group lessons. Age 9+ (tall enough to hold the instrument).",
       "tag": "Ages 9+",
       "free": false,
@@ -56,7 +50,6 @@
     {
       "name": "Recorder",
       "emoji": "🪈",
-      "summary": "Ages 6.5+",
       "description": "A wonderful first instrument. Students learn music reading, develop finger coordination, and enjoy ensemble playing with others.",
       "tag": "Ages 6.5+",
       "free": false,
@@ -65,7 +58,6 @@
     {
       "name": "Trumpet",
       "emoji": "🎺",
-      "summary": "Ages 8+",
       "description": "A bold, dramatic instrument that is exciting to play! Students learn together in an encouraging group environment. Small class (max 4 students). Must have learnt another instrument for 1 year or more.",
       "tag": "Ages 8+",
       "free": false,
@@ -74,7 +66,6 @@
     {
       "name": "Drums",
       "emoji": "🥁",
-      "summary": "Ages 7+",
       "description": "Develop rhythm, coordination, and percussion skills. Learn to read rhythmic notation and play a variety of styles and patterns. Very popular - waitlisting may apply.",
       "tag": "Ages 7+",
       "free": false,
@@ -83,7 +74,6 @@
     {
       "name": "Choir",
       "emoji": "😀",
-      "summary": "Free for all Gallery students! Sing together with other children.",
       "description": "Sing is good for the brain, lungs and heart! Develop your musicality and ensemble skills by singing together in a fun, supportive group. Open to all children, whether learning an instrument at Gallery or not.",
       "tag": "Free!",
       "free": true,
