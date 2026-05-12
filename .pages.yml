@@ -249,10 +249,6 @@ content:
             label: Icon (emoji)
             type: string
             description: "Single emoji, e.g. 🎻"
-          - name: summary
-            label: Short description (Home page)
-            type: string
-            description: "One sentence shown on the home page grid"
           - name: description
             label: Full description (Classes page)
             type: text

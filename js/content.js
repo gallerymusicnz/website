@@ -67,13 +67,13 @@
     }).join('');
   }
 
-  /* --- Instrument Cards (home page — linked, summary text, featured only) --- */
+  /* --- Instrument Cards (home page — linked, featured only) --- */
   function renderHomeInstruments(data) {
     var container = document.getElementById('home-instruments');
     if (!container || !data.instruments) return;
     var featured = data.instruments.filter(function (i) { return i.show_on_home; });
     container.innerHTML = featured.map(function (i) {
-      return '<a href="classes.html" class="card' + (i.free ? ' card--free' : '') + '"><div class="card__icon">' + i.emoji + '</div><h3>' + escapeHTML(i.name) + '</h3><p>' + escapeHTML(i.summary) + '</p><span class="card__tag">' + escapeHTML(i.tag) + '</span></a>';
+      return '<a href="classes.html" class="card' + (i.free ? ' card--free' : '') + '"><div class="card__icon">' + i.emoji + '</div><h3>' + escapeHTML(i.name) + '</h3><span class="card__tag">' + escapeHTML(i.tag) + '</span></a>';
     }).join('');
   }
 
