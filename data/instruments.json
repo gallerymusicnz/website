@@ -92,10 +92,10 @@
     {
       "name": "Pat Sviatko Ensemble",
       "emoji": "🎶",
-      "summary": "Open to students who have been learning an instrument for 1 year or more.",
-      "description": "The Pat Sviatko Ensemble welcomes players who have learnt an orchestral instrument for 1 year or more: cello, violin, trumpet, flute, viola, students who have studied for two years and can read music. Develop ensemble skills, collaborative listening, and perform at the annual concert.",
-      "tag": "2+ years experience",
-      "free": false,
+      "summary": "Make music together - for those who've learnt for 1 year or more",
+      "description": "Enjoy playing beautiful music with others! The Pat Sviatko Ensemble welcomes players who have learnt an orchestral instrument for 1 year or more: cello, violin, trumpet, flute, viola, percussion, recorder. Develop valuable skills in ensemble playing, music reading and performance.",
+      "tag": "1+ years learning",
+      "free": true,
       "show_on_home": false
     },
     {
