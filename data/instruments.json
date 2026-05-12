@@ -47,10 +47,9 @@
     },
     {
       "name": "Flute",
-      "emoji": "🪈",
-      "summary": "Ages 10+. Intermediate-level students welcome.",
-      "description": "Develop breath control, tone production, and fingering technique in group flute lessons. Suited to slightly older students who can manage the instrument.",
-      "tag": "Ages 10+",
+      "summary": "Ages 9+. Primary and intermediate-level students welcome.",
+      "description": "A sweet sounding, beautiful silver wind instrument. Enjoy developing breathing, tone and fingering skills in fun group lessons. Age 9+ (tall enough to hold the instrument).",
+      "tag": "Ages 9+",
       "free": false,
       "show_on_home": true
     },
