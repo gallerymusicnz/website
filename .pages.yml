@@ -154,10 +154,92 @@ content:
         label: Typical class size
         type: string
         description: "e.g. 4–6 students"
-      - name: clubhub_url
-        label: ClubHub URL
+  - name: home_enrolment
+    label: "Home - How to Enrol"
+    type: file
+    path: data/enrolment.json
+    format: json
+    fields:
+      - name: title
+        label: Section title
         type: string
-        description: "Full URL for the ClubHub login link. Leave blank to hide the button."
+        description: "Heading shown above the enrolment steps."
+      - name: intro
+        label: Intro paragraph
+        type: text
+        description: "Short paragraph shown under the heading."
+      - name: steps
+        label: Steps
+        type: object
+        list:
+          collapsible: true
+          collapsed: false
+          summary: "{number}. {heading}"
+        fields:
+          - name: number
+            label: Step number
+            type: string
+            description: "Usually 1, 2, 3, 4."
+          - name: heading
+            label: Heading
+            type: string
+          - name: body
+            label: Body text
+            type: text
+          - name: link_text
+            label: Link text (optional)
+            type: string
+            description: "Leave blank for no link."
+          - name: link_url
+            label: Link URL (optional)
+            type: string
+            description: "Relative URL such as classes.html, or a full https:// URL."
+      - name: contact_box
+        label: Contact box
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+          - name: items
+            label: Contact items
+            type: object
+            list:
+              collapsible: true
+              collapsed: false
+              summary: "{label}: {value}"
+            fields:
+              - name: icon
+                label: Icon
+                type: string
+                description: "Small symbol shown beside this contact item."
+              - name: label
+                label: Label
+                type: string
+              - name: value
+                label: Value
+                type: text
+              - name: url
+                label: Link URL (optional)
+                type: string
+                description: "Use mailto: for email, tel: for phone, or leave blank for plain text."
+      - name: clubhub
+        label: ClubHub box
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+          - name: text
+            label: Text
+            type: text
+          - name: button_text
+            label: Button text
+            type: string
+          - name: button_url
+            label: Button URL
+            type: string
+            description: "Leave blank to keep the placeholder link."
 
   # ═══════════════════════════════════════════════
   #  📖  CLASSES PAGE

@@ -22,6 +22,10 @@
       .replace(/"/g, '&quot;');
   }
 
+  function escapeTextWithBreaks(str) {
+    return escapeHTML(str).replace(/\n/g, '<br>');
+  }
+
   /* --- Term Dates --- */
   function renderTermDates(data) {
     var tbody = document.getElementById('term-dates-body');
@@ -123,6 +127,59 @@
     }
   }
 
+  /* --- How to Enrol (home page) --- */
+  function renderEnrolment(data) {
+    var titleEl = document.getElementById('enrolment-title');
+    var introEl = document.getElementById('enrolment-intro');
+    var steps = document.getElementById('enrolment-steps');
+    var contactHeading = document.getElementById('enrolment-contact-heading');
+    var contactItems = document.getElementById('enrolment-contact-items');
+    var clubhub = document.getElementById('enrolment-clubhub');
+
+    if (titleEl && data.title) titleEl.textContent = data.title;
+    if (introEl && data.intro) introEl.textContent = data.intro;
+
+    if (steps && data.steps) {
+      steps.innerHTML = data.steps.map(function (step, idx) {
+        var link = (step.link_text && step.link_url)
+          ? ' <a href="' + escapeHTML(step.link_url) + '">' + escapeHTML(step.link_text) + '</a>'
+          : '';
+        return '<div class="enrol-step">' +
+          '<div class="enrol-step__num">' + escapeHTML(step.number || idx + 1) + '</div>' +
+          '<div><h4>' + escapeHTML(step.heading || '') + '</h4>' +
+          '<p>' + escapeHTML(step.body || '') + link + '</p></div>' +
+          '</div>';
+      }).join('');
+    }
+
+    if (contactHeading && data.contact_box && data.contact_box.heading) {
+      contactHeading.textContent = data.contact_box.heading;
+    }
+    if (contactItems && data.contact_box && data.contact_box.items) {
+      contactItems.innerHTML = data.contact_box.items.map(function (item) {
+        var value = item.url
+          ? '<a href="' + escapeHTML(item.url) + '">' + escapeTextWithBreaks(item.value || '') + '</a>'
+          : '<span>' + escapeTextWithBreaks(item.value || '') + '</span>';
+        return '<div class="contact-item">' +
+          '<div class="contact-item__icon">' + escapeHTML(item.icon || '') + '</div>' +
+          '<div><div class="contact-item__label">' + escapeHTML(item.label || '') + '</div>' +
+          value + '</div></div>';
+      }).join('');
+    }
+
+    if (clubhub && data.clubhub) {
+      var buttonUrl = data.clubhub.button_url || '#';
+      var buttonTitle = data.clubhub.button_url ? '' : ' title="ClubHub link coming soon"';
+      clubhub.innerHTML =
+        '<div class="clubhub-banner__text">' +
+        '<strong>' + escapeHTML(data.clubhub.heading || '') + '</strong> ' +
+        escapeHTML(data.clubhub.text || '') +
+        '</div>' +
+        '<a href="' + escapeHTML(buttonUrl) + '" class="btn"' + buttonTitle + '>' +
+        escapeHTML(data.clubhub.button_text || 'ClubHub') + ' &rarr;</a>';
+    }
+  }
+
   /* --- Stat Cards (home page) --- */
   function renderStats(data) {
     var container = document.getElementById('key-stats');
@@ -130,10 +187,6 @@
     container.innerHTML = data.stats.map(function (s) {
       return '<div class="stat-card"><span class="stat-card__value">' + escapeHTML(s.value) + '</span><span class="stat-card__label">' + escapeHTML(s.label) + '</span></div>';
     }).join('');
-    if (data.clubhub_url) {
-      var clubhubBtn = document.querySelector('.clubhub-banner .btn');
-      if (clubhubBtn) clubhubBtn.href = data.clubhub_url;
-    }
   }
 
   /* --- Orchestra Details --- */
@@ -176,6 +229,7 @@
       faqs:               !!document.getElementById('faq-list'),
       stats:              !!document.getElementById('key-stats'),
       fees:               !!document.getElementById('fee-box'),
+      enrolment:          !!document.getElementById('enrolment-steps'),
       orchestraDetails:   !!document.getElementById('orchestra-details-list')
     };
 
@@ -186,6 +240,7 @@
     if (needs.faqs)             fetchJSON('faqs.json').then(renderFAQs).catch(console.error);
     if (needs.stats)            fetchJSON('site-settings.json').then(renderStats).catch(console.error);
     if (needs.fees)             fetchJSON('fees.json').then(renderFees).catch(console.error);
+    if (needs.enrolment)        fetchJSON('enrolment.json').then(renderEnrolment).catch(console.error);
     if (needs.orchestraDetails) fetchJSON('orchestra-details.json').then(renderOrchestraDetails).catch(console.error);
     if (needs.homeInstruments || needs.classInstruments) {
       fetchJSON('instruments.json').then(function (data) {
