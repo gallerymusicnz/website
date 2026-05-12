@@ -74,8 +74,8 @@
     {
       "name": "Drums",
       "emoji": "🥁",
-      "summary": "Ages 7+.",
-      "description": "Develop rhythm, coordination, and percussion skills. Learn to read rhythmic notation and play a variety of styles and patterns. Very popular - waitlist may apply.",
+      "summary": "Ages 7+",
+      "description": "Develop rhythm, coordination, and percussion skills. Learn to read rhythmic notation and play a variety of styles and patterns. Very popular - waitlisting may apply.",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
@@ -84,7 +84,7 @@
       "name": "Choir",
       "emoji": "😀",
       "summary": "Free for all Gallery students! Sing together with other children.",
-      "description": "Open to all Gallery students at no extra cost! Sing together in a fun, supportive group and perform at the annual concert.",
+      "description": "Sing is good for the brain, lungs and heart! Develop your musicality and ensemble skills by singing together in a fun, supportive group. Open to all children, whether learning an instrument at Gallery or not.",
       "tag": "Free!",
       "free": true,
       "show_on_home": true
