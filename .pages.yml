@@ -223,23 +223,6 @@ content:
                 label: Link URL (optional)
                 type: string
                 description: "Use mailto: for email, tel: for phone, or leave blank for plain text."
-      - name: clubhub
-        label: ClubHub box
-        type: object
-        fields:
-          - name: heading
-            label: Heading
-            type: string
-          - name: text
-            label: Text
-            type: text
-          - name: button_text
-            label: Button text
-            type: string
-          - name: button_url
-            label: Button URL
-            type: string
-            description: "Leave blank to keep the placeholder link."
 
   # ═══════════════════════════════════════════════
   #  📖  CLASSES PAGE

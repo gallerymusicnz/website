@@ -106,8 +106,7 @@ a:hover {
 .nav__links a:hover,
 .nav__logo:hover,
 .footer__links a:hover,
-.footer__social a:hover,
-.clubhub-banner .btn:hover {
+.footer__social a:hover {
   text-decoration: none;
 }
 
@@ -1009,41 +1008,6 @@ h4 { font-size: var(--fs-lg); }
 .contact-item a,
 .contact-item span {
   font-size: var(--fs-sm);
-}
-
-.clubhub-banner {
-  margin-top: var(--space-lg);
-  background: var(--color-bg-dark);
-  border-radius: var(--radius-md);
-  padding: var(--space-md) var(--space-lg);
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  color: var(--color-white);
-}
-
-.clubhub-banner__text {
-  flex: 1;
-  font-size: var(--fs-sm);
-  line-height: var(--lh-normal);
-}
-
-.clubhub-banner__text strong {
-  display: block;
-  color: var(--color-white);
-}
-
-.clubhub-banner .btn {
-  background: var(--color-accent);
-  color: var(--color-white);
-  padding: 0.5rem 1rem;
-  font-size: var(--fs-sm);
-  white-space: nowrap;
-}
-
-.clubhub-banner .btn:hover {
-  background: #c08a22;
-  color: var(--color-white);
 }
 
 /* --- Page Header (smaller hero used on inner pages) --- */
