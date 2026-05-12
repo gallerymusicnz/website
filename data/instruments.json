@@ -3,7 +3,7 @@
     {
       "name": "Music Basics",
       "emoji": "🎼",
-      "summary": "Ages 5–6. A fun introduction to music fundamentals.",
+      "summary": "Ages 5–6",
       "description": "A pre-instrumental programme introducing children to music fundamentals through singing, movement, rhythm games, percussion & ukulele. A fun and engaging first step into the world of music.",
       "tag": "Ages 5–6",
       "free": false,
@@ -12,17 +12,17 @@
     {
       "name": "Violin",
       "emoji": "🎻",
-      "summary": "Ages 7+. Learn violin in a supportive group setting.",
-      "description": "Learn violin in a supportive group setting. Students develop bowing technique, posture, and music reading skills while playing together with their peers.",
-      "tag": "Ages 7+. Violins available for hire.",
+      "summary": "Ages 7+",
+      "description": "Learn violin in a supportive group setting. Students develop good bowing technique, posture, and music reading skills while playing together with their peers.",
+      "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
     },
     {
       "name": "Cello",
       "emoji": "🎻",
-      "summary": "Ages 7+. Cellos available for hire.",
-      "description": "Explore the rich tones of the cello in group lessons. Cellos are available for hire ($100/year) for students who don't yet have their own instrument.",
+      "summary": "Ages 7+",
+      "description": "Explore the rich, warm tones of the cello in group lessons. Cellos are available for hire ($100/year) for students who don't yet have their own instrument.",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
