@@ -22,7 +22,7 @@
       "name": "Cello",
       "emoji": "🎻",
       "summary": "Ages 7+",
-      "description": "Explore the rich, warm tones of the cello in group lessons. Cellos are available for hire ($100/year) for students who don't yet have their own instrument.",
+      "description": "Explore the rich, warm tones of the cello in fun small group lessons (maximum 4 per class). Cellos are available for hire ($100/year).",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
@@ -30,8 +30,8 @@
     {
       "name": "Keyboard",
       "emoji": "🎹",
-      "summary": "Ages 7+. Waitlists may apply.",
-      "description": "Build keyboard skills including reading music, chord progressions, and playing melodies. A popular class — waitlists may apply.",
+      "summary": "Ages 7+",
+      "description": "Build keyboard skills including reading music, playing melodies, and developing finger coordination. A popular class — waitlists may apply.",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
