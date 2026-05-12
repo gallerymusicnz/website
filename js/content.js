@@ -67,13 +67,13 @@
     }).join('');
   }
 
-  /* --- Instrument Cards (home page — linked, summary text, featured only) --- */
+  /* --- Instrument Cards (home page — linked, featured only) --- */
   function renderHomeInstruments(data) {
     var container = document.getElementById('home-instruments');
     if (!container || !data.instruments) return;
     var featured = data.instruments.filter(function (i) { return i.show_on_home; });
     container.innerHTML = featured.map(function (i) {
-      return '<a href="classes.html" class="card' + (i.free ? ' card--free' : '') + '"><div class="card__icon">' + i.emoji + '</div><h3>' + escapeHTML(i.name) + '</h3><p>' + escapeHTML(i.summary) + '</p><span class="card__tag">' + escapeHTML(i.tag) + '</span></a>';
+      return '<a href="classes.html" class="card' + (i.free ? ' card--free' : '') + '"><div class="card__icon">' + i.emoji + '</div><h3>' + escapeHTML(i.name) + '</h3><span class="card__tag">' + escapeHTML(i.tag) + '</span></a>';
     }).join('');
   }
 
@@ -179,10 +179,24 @@
 
   /* --- Orchestra Details --- */
   function renderOrchestraDetails(data) {
+    var groups = document.getElementById('orchestra-groups');
+    if (groups && data.groups) {
+      groups.innerHTML = data.groups.map(function (group) {
+        return '<article class="orchestra-group">' +
+          '<div class="orchestra-group__header">' +
+          '<h3>' + escapeHTML(group.name || '') + '</h3>' +
+          (group.subtitle ? '<span>' + escapeHTML(group.subtitle) + '</span>' : '') +
+          '</div>' +
+          '<p>' + escapeHTML(group.experience || '') + '</p>' +
+          '<p>' + escapeHTML(group.schedule || '') + '</p>' +
+          '</article>';
+      }).join('');
+    }
+
     var list = document.getElementById('orchestra-details-list');
     if (!list) return;
-    var fields = ['when', 'where', 'cost', 'bring', 'experience'];
-    var labels = { when: 'When', where: 'Where', cost: 'Cost', bring: 'Bring', experience: 'Experience' };
+    var fields = ['when', 'where', 'cost', 'bring', 'instrument_hire'];
+    var labels = { when: 'When', where: 'Where', cost: 'Cost', bring: 'Bring', instrument_hire: 'Instrument Hire' };
     list.innerHTML = fields.map(function (f) {
       if (!data[f]) return '';
       return '<li><strong>' + labels[f] + '</strong><span>' + escapeHTML(data[f]) + '</span></li>';

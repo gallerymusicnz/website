@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Community Orchestra — Gallery Music Centre</title>
-  <meta name="description" content="Join the Gallery Community Orchestra — open to all ages. Make music together every Saturday morning in Lower Hutt.">
+  <title>Community Orchestra &mdash; Gallery Music Centre</title>
+  <meta name="description" content="Join the Gallery Community Orchestra, open to all ages with Orchestra and Junior Ensemble groups on Saturday mornings in Lower Hutt.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
   <!-- Header -->
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a href="home.html" class="nav__logo" aria-label="Gallery Music Centre — Home">
+      <a href="home.html" class="nav__logo" aria-label="Gallery Music Centre - Home">
         <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
           <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="2"/>
           <path d="M12 22V12l10-2v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -58,7 +58,7 @@
       <div class="container">
         <div class="hero__content">
           <h1>Gallery Community Orchestra</h1>
-          <p>Open to all ages &mdash; join our community orchestra and make music together.</p>
+          <p>Open to all ages &mdash; join our community orchestra and play music together.</p>
           <div class="hero__buttons">
             <a href="#join" class="btn btn--primary btn--large">How to Join</a>
             <a href="enrol.html" class="btn btn--secondary btn--large">Enrol Now</a>
@@ -73,22 +73,34 @@
     <!-- About the Orchestra -->
     <section class="section">
       <div class="container" style="max-width: 800px;">
-        <div class="placeholder-notice" aria-label="Placeholder content"></div>
         <h2>About the Orchestra</h2>
         <p style="margin-top: var(--space-md); margin-bottom: var(--space-md);">
-          The Gallery Community Orchestra is open to musicians of all ages &mdash; unlike our other classes, which are primarily for primary and intermediate school students. Whether you're a teenager, a university student, or an adult returning to music, you're welcome here.
+          The Gallery Community Orchestra is open to musicians of all ages. Whether you're a primary, intermediate or secondary school student, a teenager, a university student, an adult, or an adult returning to music, you're welcome here.
         </p>
         <p style="margin-bottom: var(--space-md);">
-          Players should have approximately 3 years of prior tuition on their instrument. The orchestra meets on Saturday mornings alongside the children's classes at Dyer Street School, making it easy for parents to play while their children are in lessons.
+          Rehearsals cover a range of repertoire from classical to contemporary, chosen to be engaging and achievable for players of varying abilities. The orchestra performs at the annual Gallery concert and occasionally at community events throughout the year.
         </p>
         <p>
-          Rehearsals cover a range of repertoire from classical to contemporary, chosen to be engaging and achievable for players of varying abilities. The orchestra performs at the annual Gallery concert and occasionally at community events throughout the year.
+          There are two groups: Orchestra and Ensemble, our Junior Orchestra.
         </p>
       </div>
     </section>
 
-    <!-- Who Is It For? -->
+    <!-- Orchestra Groups -->
     <section class="section section--alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Orchestra Groups</h2>
+          <p>Choose the group that best matches your current playing experience.</p>
+        </div>
+        <div class="orchestra-groups" id="orchestra-groups">
+          <!-- loaded from data/orchestra-details.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Who Is It For? -->
+    <section class="section">
       <div class="container">
         <div class="section-title">
           <h2>Who Is It For?</h2>
@@ -118,7 +130,7 @@
     </section>
 
     <!-- Practical Details -->
-    <section class="section">
+    <section class="section section--alt">
       <div class="container" style="max-width: 700px;">
         <div class="section-title">
           <h2>Practical Details</h2>
@@ -130,7 +142,7 @@
     </section>
 
     <!-- How to Join -->
-    <section class="section section--alt" id="join">
+    <section class="section" id="join">
       <div class="container">
         <div class="cta-banner">
           <h2>Interested? Get in touch!</h2>
