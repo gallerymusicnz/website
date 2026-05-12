@@ -1,0 +1,69 @@
+{
+  "title": "How to Enrol",
+  "intro": "We welcome new students throughout the year for some classes. Here's how to get started.",
+  "steps": [
+    {
+      "number": "1",
+      "heading": "Check available classes",
+      "body": "Review our classes list and check your child's age and experience. Note that keyboard and guitar have significant waitlists.",
+      "link_text": "View classes",
+      "link_url": "classes.html"
+    },
+    {
+      "number": "2",
+      "heading": "Contact us to express interest",
+      "body": "Email or call us to let us know which class you're interested in. We'll let you know about availability and add you to the waitlist if needed.",
+      "link_text": "",
+      "link_url": ""
+    },
+    {
+      "number": "3",
+      "heading": "Complete enrolment via ClubHub",
+      "body": "We use ClubHub to manage enrolments and payments. You'll receive a link to complete your registration and set up your family contribution.",
+      "link_text": "",
+      "link_url": ""
+    },
+    {
+      "number": "4",
+      "heading": "Start Saturday lessons!",
+      "body": "Arrive at Dyer Street School, 9 Dyer Street, Lower Hutt at your class start time. Please be ready outside the classroom a few minutes before.",
+      "link_text": "",
+      "link_url": ""
+    }
+  ],
+  "contact_box": {
+    "heading": "Get in touch",
+    "items": [
+      {
+        "icon": "\u2709",
+        "label": "Email",
+        "value": "administration@gallerymusic.org",
+        "url": "mailto:administration@gallerymusic.org"
+      },
+      {
+        "icon": "\u260e",
+        "label": "Mobile",
+        "value": "021 177 0072",
+        "url": "tel:021-177-0072"
+      },
+      {
+        "icon": "\u26b2",
+        "label": "Location",
+        "value": "Dyer Street School\n9 Dyer Street, Lower Hutt",
+        "url": ""
+      },
+      {
+        "icon": "\ud83d\udcc5",
+        "label": "When",
+        "value": "Saturday mornings during school terms",
+        "url": ""
+      }
+    ]
+  },
+  "clubhub": {
+    "heading": "Already enrolled?",
+    "text": "Log in to ClubHub to manage your details and payments",
+    "button_text": "ClubHub",
+    "button_url": ""
+  }
+}
