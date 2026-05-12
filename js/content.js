@@ -179,10 +179,24 @@
 
   /* --- Orchestra Details --- */
   function renderOrchestraDetails(data) {
+    var groups = document.getElementById('orchestra-groups');
+    if (groups && data.groups) {
+      groups.innerHTML = data.groups.map(function (group) {
+        return '<article class="orchestra-group">' +
+          '<div class="orchestra-group__header">' +
+          '<h3>' + escapeHTML(group.name || '') + '</h3>' +
+          (group.subtitle ? '<span>' + escapeHTML(group.subtitle) + '</span>' : '') +
+          '</div>' +
+          '<p>' + escapeHTML(group.experience || '') + '</p>' +
+          '<p>' + escapeHTML(group.schedule || '') + '</p>' +
+          '</article>';
+      }).join('');
+    }
+
     var list = document.getElementById('orchestra-details-list');
     if (!list) return;
-    var fields = ['when', 'where', 'cost', 'bring', 'experience'];
-    var labels = { when: 'When', where: 'Where', cost: 'Cost', bring: 'Bring', experience: 'Experience' };
+    var fields = ['when', 'where', 'cost', 'bring', 'instrument_hire'];
+    var labels = { when: 'When', where: 'Where', cost: 'Cost', bring: 'Bring', instrument_hire: 'Instrument Hire' };
     list.innerHTML = fields.map(function (f) {
       if (!data[f]) return '';
       return '<li><strong>' + labels[f] + '</strong><span>' + escapeHTML(data[f]) + '</span></li>';

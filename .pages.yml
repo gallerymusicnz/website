@@ -297,7 +297,7 @@ content:
   # ═══════════════════════════════════════════════
 
   - name: orchestra_details
-    label: "🎻 Orchestra — Practical Details"
+    label: "Orchestra - Groups & Practical Details"
     type: file
     path: data/orchestra-details.json
     format: json
@@ -305,7 +305,7 @@ content:
       - name: when
         label: When
         type: string
-        description: "e.g. Saturday mornings — contact us for current schedule"
+        description: "e.g. Saturday mornings - Ensemble 9:30-10:00 am, Orchestra 9:30-11:30 am"
       - name: where
         label: Where
         type: string
@@ -317,9 +317,34 @@ content:
       - name: bring
         label: What to bring
         type: string
-      - name: experience
-        label: Experience required
-        type: string
+      - name: instrument_hire
+        label: Instrument hire
+        type: text
+        description: "Shown in the practical details list."
+      - name: groups
+        label: Orchestra groups
+        type: object
+        list:
+          collapsible: true
+          collapsed: false
+          summary: "{name} - {subtitle}"
+        fields:
+          - name: name
+            label: Group name
+            type: string
+            description: "e.g. Ensemble or Orchestra"
+          - name: subtitle
+            label: Subtitle
+            type: string
+            description: "e.g. Junior Orchestra"
+          - name: experience
+            label: Experience
+            type: text
+            description: "Experience guidance for this group."
+          - name: schedule
+            label: Schedule
+            type: string
+            description: "When and where this group meets."
       - name: contact_note
         label: Contact / audition note
         type: string

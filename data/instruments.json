@@ -101,9 +101,9 @@
     {
       "name": "Orchestra",
       "emoji": "🎶",
-      "summary": "Free! For students with 3+ years experience.",
-      "description": "The Gallery Orchestra is a community orchestra open to all ages, and it's free! For players with approximately 3 years of prior tuition or more (roughly equivalent to grade 3 to 8+). See our Orchestra page for more details.",
-      "tag": "3+ years experience",
+      "summary": "Free community orchestra and junior ensemble for progressing players.",
+      "description": "The Gallery Community Orchestra is open to all ages, and it's free. Ensemble (Junior Orchestra) is for players with approximately 1 year of prior tuition; Orchestra is for players with approximately 3 years of prior tuition. See our Orchestra page for more details.",
+      "tag": "1+ years learning",
       "free": true,
       "show_on_home": false
     }

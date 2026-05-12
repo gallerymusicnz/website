@@ -1,8 +1,22 @@
 {
-  "when": "Saturday mornings — contact us for current schedule",
+  "when": "Saturday mornings - Ensemble 9:30-10:00 am, Orchestra 9:30-11:30 am",
   "where": "Dyer Street School, 9 Dyer Street, Epuni, Lower Hutt 5011",
   "cost": "Free",
-  "bring": "Your instrument and a music stand if you have one",
-  "experience": "Approximately 3 years of prior tuition on your instrument",
-  "contact_note": "Contact us to discuss your experience level."
+  "bring": "Your instrument - and a music stand if you have one",
+  "instrument_hire": "There are a limited number of instruments available for hire - contact us for more information.",
+  "groups": [
+    {
+      "name": "Ensemble",
+      "subtitle": "Junior Orchestra",
+      "experience": "Approximately 1 year of prior tuition on your instrument.",
+      "schedule": "Saturday mornings alongside the Orchestra."
+    },
+    {
+      "name": "Orchestra",
+      "subtitle": "Community Orchestra",
+      "experience": "Approximately 3 years of prior tuition on your instrument.",
+      "schedule": "Saturday mornings at Dyer Street School."
+    }
+  ],
+  "contact_note": "Contact us if you are unsure which group is the best fit."
 }
