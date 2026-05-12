@@ -74,7 +74,7 @@
     {
       "name": "Drums",
       "emoji": "🥁",
-      "summary": "Ages 7+. Develop rhythm and coordination.",
+      "summary": "Ages 7+.",
       "description": "Develop rhythm, coordination, and percussion skills. Learn to read rhythmic notation and play a variety of styles and patterns. Very popular - waitlist may apply.",
       "tag": "Ages 7+",
       "free": false,
@@ -82,8 +82,8 @@
     },
     {
       "name": "Choir",
-      "emoji": "🎤",
-      "summary": "Free for all Gallery students!",
+      "emoji": "😀",
+      "summary": "Free for all Gallery students! Sing together with other children.",
       "description": "Open to all Gallery students at no extra cost! Sing together in a fun, supportive group and perform at the annual concert.",
       "tag": "Free!",
       "free": true,
@@ -92,8 +92,8 @@
     {
       "name": "Pat Sviatko Ensemble",
       "emoji": "🎶",
-      "summary": "Cello & violin students with 2+ years experience.",
-      "description": "The Pat Sviatko Ensemble welcomes cello and violin students who have studied for two years and can read music. Develop ensemble skills, collaborative listening, and perform at the annual concert.",
+      "summary": "Open to students who have been learning an instrument for 1 year or more.",
+      "description": "The Pat Sviatko Ensemble welcomes players who have learnt an orchestral instrument for 1 year or more: cello, violin, trumpet, flute, viola, students who have studied for two years and can read music. Develop ensemble skills, collaborative listening, and perform at the annual concert.",
       "tag": "2+ years experience",
       "free": false,
       "show_on_home": false
