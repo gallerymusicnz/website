@@ -1,9 +1,25 @@
 {
   "terms": [
-    { "name": "Term 1", "lessons": "7 lessons", "dates": "14 Feb \u2013 28 Mar" },
-    { "name": "Term 2", "lessons": "9 lessons", "dates": "25 Apr \u2013 27 Jun (no lessons 30 May \u2014 King\u2019s Birthday)" },
-    { "name": "Term 3", "lessons": "9 lessons", "dates": "25 Jul \u2013 19 Sep" },
-    { "name": "Term 4", "lessons": "8 lessons", "dates": "17 Oct \u2013 5 Dec" }
+    {
+      "name": "Term 1",
+      "lessons": "7 lessons",
+      "dates": "14 Feb – 28 Mar"
+    },
+    {
+      "name": "Term 2",
+      "lessons": "9 lessons",
+      "dates": "25 Apr – 27 Jun (no lessons 30 May — King’s Birthday)"
+    },
+    {
+      "name": "Term 3",
+      "lessons": "9 lessons",
+      "dates": "25 Jul – 19 Sep"
+    },
+    {
+      "name": "Term 4",
+      "lessons": "8 lessons",
+      "dates": "17 Oct – 5 Dec"
+    }
   ],
-  "note": "Public holiday weekends run as normal unless otherwise advised. See the full calendar for individual lesson dates."
+  "note": "Public holiday weekends run as normal unless otherwise advised. "
 }
