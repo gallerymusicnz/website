@@ -42,6 +42,7 @@
     },
     {
       "name": "Flute",
+      "emoji": "🎶",
       "description": "A beautiful, sweet sounding, silver wind instrument. Enjoy developing tone, breathing and fingering skills in fun group lessons. Age 9+ (tall enough to hold the instrument).",
       "tag": "Ages 9+",
       "free": false,
@@ -49,7 +50,7 @@
     },
     {
       "name": "Recorder",
-      "emoji": "🪈",
+      "emoji": "🎵",
       "description": "A wonderful first instrument. Students learn music reading, develop finger coordination, and enjoy ensemble playing with others.",
       "tag": "Ages 6.5+",
       "free": false,
