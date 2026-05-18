@@ -773,22 +773,6 @@ h4 { font-size: var(--fs-lg); }
   font-style: italic;
 }
 
-/* --- Placeholder notices (remove before launch) --- */
-.placeholder-notice {
-  background: #fff3cd;
-  border: 2px dashed #f0a500;
-  border-radius: 8px;
-  padding: 10px 16px;
-  margin-bottom: var(--space-lg);
-  font-size: var(--fs-sm);
-  font-weight: 600;
-  color: #7a4f00;
-  text-align: center;
-}
-.placeholder-notice::before {
-  content: "⚠ PLACEHOLDER — replace before launch";
-}
-
 /* --- Table scroll wrapper (mobile overflow) --- */
 .table-scroll {
   overflow-x: auto;
