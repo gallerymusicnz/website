@@ -389,7 +389,10 @@ h4 { font-size: var(--fs-lg); }
 
 .hero,
 .page-header {
-  --hero-scene: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600' preserveAspectRatio='xMidYMax slice'><defs><linearGradient id='r' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23a3bcc8'/><stop offset='1' stop-color='%23718fa0'/></linearGradient><linearGradient id='m' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2374a87f'/><stop offset='1' stop-color='%23437a55'/></linearGradient><linearGradient id='l' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2376bd7e'/><stop offset='0.5' stop-color='%23448e54'/><stop offset='1' stop-color='%23215633'/></linearGradient><linearGradient id='h' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%237ec483'/><stop offset='0.5' stop-color='%234b975c'/><stop offset='1' stop-color='%23275f3a'/></linearGradient><linearGradient id='b' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23ead09a'/><stop offset='1' stop-color='%23a98745'/></linearGradient><linearGradient id='w' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23a8dbed'/><stop offset='0.4' stop-color='%233aa3d6'/><stop offset='1' stop-color='%23156a9a'/></linearGradient></defs><path d='M0 290 C 200 250 400 270 600 260 C 800 250 1000 275 1200 268 L 1200 380 L 0 380 Z' fill='url(%23r)' opacity='0.85'/><path d='M0 286 C 240 270 480 280 720 274 C 960 268 1100 280 1200 274 L 1200 318 L 0 318 Z' fill='%23ffffff' opacity='0.22'/><path d='M0 600 L 0 360 C 100 326 200 310 320 320 C 440 330 560 358 680 348 C 800 338 920 320 1040 332 C 1140 340 1180 348 1200 348 L 1200 600 Z' fill='url(%23m)' opacity='0.65'/><path d='M0 600 L 0 380 C 50 332 120 302 200 286 C 280 274 360 290 440 308 C 510 322 560 318 590 304 L 600 298 L 605 600 Z' fill='url(%23l)'/><path d='M1200 600 L 1200 380 C 1150 332 1080 302 1000 286 C 920 274 840 290 760 308 C 690 322 640 318 610 304 L 600 298 L 595 600 Z' fill='url(%23h)'/><ellipse cx='150' cy='400' rx='70' ry='14' fill='%23000000' opacity='0.13'/><ellipse cx='320' cy='450' rx='55' ry='12' fill='%23000000' opacity='0.10'/><ellipse cx='480' cy='430' rx='40' ry='9' fill='%23000000' opacity='0.10'/><ellipse cx='1050' cy='400' rx='70' ry='14' fill='%23000000' opacity='0.13'/><ellipse cx='880' cy='450' rx='55' ry='12' fill='%23000000' opacity='0.10'/><ellipse cx='720' cy='430' rx='40' ry='9' fill='%23000000' opacity='0.10'/><path d='M0 600 L 0 480 C 240 472 480 462 600 458 C 720 462 960 472 1200 480 L 1200 600 Z' fill='url(%23b)'/><path d='M590 298 L 610 298 C 615 360 640 425 700 490 L 770 540 L 800 600 L 400 600 L 430 540 L 500 490 C 560 425 585 360 590 298 Z' fill='url(%23w)'/><ellipse cx='620' cy='400' rx='8' ry='1.5' fill='%23ffffff' opacity='0.45'/><ellipse cx='590' cy='460' rx='14' ry='2' fill='%23ffffff' opacity='0.35'/><ellipse cx='640' cy='480' rx='16' ry='2' fill='%23ffffff' opacity='0.4'/><ellipse cx='560' cy='520' rx='22' ry='2.5' fill='%23ffffff' opacity='0.35'/><ellipse cx='660' cy='540' rx='24' ry='2.5' fill='%23ffffff' opacity='0.4'/><ellipse cx='520' cy='580' rx='32' ry='3' fill='%23ffffff' opacity='0.3'/></svg>");
+  /* Hutt Valley scene: pale grey shingle banks, muted grey-blue river, forested hills
+     with a hazy distant ridge. River, banks, and hills converge at one vanishing point
+     so the valley reads cleanly at every aspect ratio. */
+  --hero-scene: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600' preserveAspectRatio='xMidYMax slice'><defs><linearGradient id='haze' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23b8c8d2' stop-opacity='0.65'/><stop offset='1' stop-color='%2390a4b0' stop-opacity='0.8'/></linearGradient><linearGradient id='midHill' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2382b691'/><stop offset='1' stop-color='%23436f50'/></linearGradient><linearGradient id='hill' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2374b07d'/><stop offset='0.55' stop-color='%233e7c4f'/><stop offset='1' stop-color='%23235639'/></linearGradient><linearGradient id='gravel' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23dcd6c6'/><stop offset='1' stop-color='%23aaa088'/></linearGradient><linearGradient id='water' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23cadde0'/><stop offset='0.45' stop-color='%237aa9b8'/><stop offset='1' stop-color='%233c7589'/></linearGradient><linearGradient id='riparian' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%236ea16e' stop-opacity='0.9'/><stop offset='1' stop-color='%233a6843' stop-opacity='0.9'/></linearGradient></defs><path d='M0 420 C 80 400 160 392 240 396 C 320 402 380 410 440 412 C 510 414 560 414 600 414 C 640 414 690 414 760 412 C 820 410 880 402 960 396 C 1040 392 1120 400 1200 420 L 1200 460 L 0 460 Z' fill='url(%23haze)'/><path d='M0 600 L 0 432 C 120 408 260 392 400 402 C 500 410 560 414 600 416 C 640 414 700 410 800 402 C 940 392 1080 408 1200 432 L 1200 600 Z' fill='url(%23midHill)' opacity='0.92'/><path d='M0 600 L 0 444 C 70 408 170 384 270 376 C 370 372 460 384 530 400 C 568 408 586 412 594 414 L 600 410 L 600 600 Z' fill='url(%23hill)'/><path d='M1200 600 L 1200 444 C 1130 408 1030 384 930 376 C 830 372 740 384 670 400 C 632 408 614 412 606 414 L 600 410 L 600 600 Z' fill='url(%23hill)'/><g fill='%231f4a2f' opacity='0.20'><path d='M0 600 L 0 510 C 80 495 200 488 320 492 C 420 498 480 504 540 510 L 580 520 L 540 600 Z'/><path d='M1200 600 L 1200 510 C 1120 495 1000 488 880 492 C 780 498 720 504 660 510 L 620 520 L 660 600 Z'/></g><path d='M593 414 C 588 442 565 488 506 540 L 432 600 L 388 600 L 462 530 C 524 478 568 444 593 414 Z' fill='url(%23riparian)' opacity='0.85'/><path d='M607 414 C 612 442 635 488 694 540 L 768 600 L 812 600 L 738 530 C 676 478 632 444 607 414 Z' fill='url(%23riparian)' opacity='0.85'/><path d='M594 418 C 590 452 558 510 472 562 L 365 600 L 252 600 Q 296 580 354 562 L 446 494 C 514 442 564 426 594 418 Z' fill='url(%23gravel)'/><path d='M606 418 C 610 452 642 510 728 562 L 835 600 L 948 600 Q 904 580 846 562 L 754 494 C 686 442 636 426 606 418 Z' fill='url(%23gravel)'/><g fill='%237d735a' opacity='0.30'><circle cx='330' cy='590' r='1.5'/><circle cx='372' cy='580' r='1.2'/><circle cx='414' cy='568' r='1.2'/><circle cx='455' cy='548' r='1'/><circle cx='492' cy='524' r='0.9'/><circle cx='522' cy='498' r='0.8'/><circle cx='548' cy='474' r='0.7'/><circle cx='870' cy='590' r='1.5'/><circle cx='828' cy='580' r='1.2'/><circle cx='786' cy='568' r='1.2'/><circle cx='745' cy='548' r='1'/><circle cx='708' cy='524' r='0.9'/><circle cx='678' cy='498' r='0.8'/><circle cx='652' cy='474' r='0.7'/></g><path d='M594 418 L 606 418 C 610 452 642 510 728 562 L 835 600 L 365 600 L 472 562 C 558 510 590 452 594 418 Z' fill='url(%23water)'/><ellipse cx='604' cy='544' rx='14' ry='3' fill='url(%23gravel)' opacity='0.85'/><ellipse cx='594' cy='584' rx='22' ry='4' fill='url(%23gravel)' opacity='0.8'/><ellipse cx='600' cy='430' rx='4' ry='1' fill='%23ffffff' opacity='0.5'/><ellipse cx='596' cy='456' rx='9' ry='1.2' fill='%23ffffff' opacity='0.45'/><ellipse cx='604' cy='486' rx='15' ry='1.6' fill='%23ffffff' opacity='0.4'/><ellipse cx='588' cy='520' rx='22' ry='2' fill='%23ffffff' opacity='0.35'/><ellipse cx='616' cy='564' rx='32' ry='2.5' fill='%23ffffff' opacity='0.32'/></svg>");
 }
 
 .hero {
@@ -453,36 +456,38 @@ h4 { font-size: var(--fs-lg); }
 
 .hero__notes svg {
   position: absolute;
-  opacity: 0.06;
   fill: currentColor;
   color: var(--color-white);
 }
 
+/* Treble clef — top-left, drifting into the sky above the headline */
 .hero__notes svg:nth-child(1) {
-  top: 14%;
-  right: 6%;
-  width: 96px;
-  height: 96px;
-  transform: rotate(-12deg);
-  opacity: 0.07;
+  top: 12%;
+  left: 6%;
+  width: 88px;
+  height: 88px;
+  transform: rotate(-10deg);
+  opacity: 0.14;
 }
 
+/* Quarter note — right side, sitting clear of the sun glow */
 .hero__notes svg:nth-child(2) {
-  top: 28%;
-  right: 26%;
-  width: 50px;
-  height: 50px;
-  transform: rotate(18deg);
-  opacity: 0.05;
+  top: 50%;
+  right: 7%;
+  width: 44px;
+  height: 44px;
+  transform: rotate(14deg);
+  opacity: 0.12;
 }
 
+/* Double eighth notes — mid-left, between headline and buttons */
 .hero__notes svg:nth-child(3) {
-  top: 42%;
-  right: 4%;
-  width: 28px;
-  height: 28px;
-  transform: rotate(-26deg);
-  opacity: 0.04;
+  top: 64%;
+  left: 4%;
+  width: 56px;
+  height: 56px;
+  transform: rotate(-18deg);
+  opacity: 0.11;
 }
 
 /* Wavy bottom edge */
@@ -1046,23 +1051,27 @@ h4 { font-size: var(--fs-lg); }
 
 .page-header .hero__notes svg:nth-child(1) {
   top: 14%;
-  right: 7%;
-  width: 72px;
-  height: 72px;
+  left: 6%;
+  width: 56px;
+  height: 56px;
+  opacity: 0.13;
 }
 
 .page-header .hero__notes svg:nth-child(2) {
-  top: 36%;
-  right: 24%;
-  width: 38px;
-  height: 38px;
+  top: 50%;
+  right: 7%;
+  width: 32px;
+  height: 32px;
+  opacity: 0.11;
 }
 
 .page-header .hero__notes svg:nth-child(3) {
-  top: 56%;
-  right: 5%;
-  width: 22px;
-  height: 22px;
+  top: 22%;
+  right: 12%;
+  left: auto;
+  width: 36px;
+  height: 36px;
+  opacity: 0.10;
 }
 
 .page-header h1 {
@@ -1669,8 +1678,30 @@ h4 { font-size: var(--fs-lg); }
     padding: var(--space-2xl) 0 calc(var(--space-2xl) + 24px);
   }
 
-  .hero__notes {
-    display: none;
+  /* Shrink and reposition notes for narrow screens so they sit clear of the headline */
+  .hero__notes svg:nth-child(1) {
+    top: 4%;
+    left: 4%;
+    width: 56px;
+    height: 56px;
+    opacity: 0.13;
+  }
+
+  .hero__notes svg:nth-child(2) {
+    top: 30%;
+    right: 4%;
+    width: 32px;
+    height: 32px;
+    opacity: 0.11;
+  }
+
+  .hero__notes svg:nth-child(3) {
+    top: 18%;
+    right: 18%;
+    left: auto;
+    width: 36px;
+    height: 36px;
+    opacity: 0.10;
   }
 
   .hero::before {
