@@ -389,7 +389,9 @@ h4 { font-size: var(--fs-lg); }
 
 .hero,
 .page-header {
-  --hero-scene: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600' preserveAspectRatio='xMidYMax slice'><defs><linearGradient id='r' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23a3bcc8'/><stop offset='1' stop-color='%23718fa0'/></linearGradient><linearGradient id='m' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2374a87f'/><stop offset='1' stop-color='%23437a55'/></linearGradient><linearGradient id='l' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%2376bd7e'/><stop offset='0.5' stop-color='%23448e54'/><stop offset='1' stop-color='%23215633'/></linearGradient><linearGradient id='h' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%237ec483'/><stop offset='0.5' stop-color='%234b975c'/><stop offset='1' stop-color='%23275f3a'/></linearGradient><linearGradient id='b' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23ead09a'/><stop offset='1' stop-color='%23a98745'/></linearGradient><linearGradient id='w' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23a8dbed'/><stop offset='0.4' stop-color='%233aa3d6'/><stop offset='1' stop-color='%23156a9a'/></linearGradient></defs><path d='M0 290 C 200 250 400 270 600 260 C 800 250 1000 275 1200 268 L 1200 380 L 0 380 Z' fill='url(%23r)' opacity='0.85'/><path d='M0 286 C 240 270 480 280 720 274 C 960 268 1100 280 1200 274 L 1200 318 L 0 318 Z' fill='%23ffffff' opacity='0.22'/><path d='M0 600 L 0 360 C 100 326 200 310 320 320 C 440 330 560 358 680 348 C 800 338 920 320 1040 332 C 1140 340 1180 348 1200 348 L 1200 600 Z' fill='url(%23m)' opacity='0.65'/><path d='M0 600 L 0 380 C 50 332 120 302 200 286 C 280 274 360 290 440 308 C 510 322 560 318 590 304 L 600 298 L 605 600 Z' fill='url(%23l)'/><path d='M1200 600 L 1200 380 C 1150 332 1080 302 1000 286 C 920 274 840 290 760 308 C 690 322 640 318 610 304 L 600 298 L 595 600 Z' fill='url(%23h)'/><ellipse cx='150' cy='400' rx='70' ry='14' fill='%23000000' opacity='0.13'/><ellipse cx='320' cy='450' rx='55' ry='12' fill='%23000000' opacity='0.10'/><ellipse cx='480' cy='430' rx='40' ry='9' fill='%23000000' opacity='0.10'/><ellipse cx='1050' cy='400' rx='70' ry='14' fill='%23000000' opacity='0.13'/><ellipse cx='880' cy='450' rx='55' ry='12' fill='%23000000' opacity='0.10'/><ellipse cx='720' cy='430' rx='40' ry='9' fill='%23000000' opacity='0.10'/><path d='M0 600 L 0 480 C 240 472 480 462 600 458 C 720 462 960 472 1200 480 L 1200 600 Z' fill='url(%23b)'/><path d='M590 298 L 610 298 C 615 360 640 425 700 490 L 770 540 L 800 600 L 400 600 L 430 540 L 500 490 C 560 425 585 360 590 298 Z' fill='url(%23w)'/><ellipse cx='620' cy='400' rx='8' ry='1.5' fill='%23ffffff' opacity='0.45'/><ellipse cx='590' cy='460' rx='14' ry='2' fill='%23ffffff' opacity='0.35'/><ellipse cx='640' cy='480' rx='16' ry='2' fill='%23ffffff' opacity='0.4'/><ellipse cx='560' cy='520' rx='22' ry='2.5' fill='%23ffffff' opacity='0.35'/><ellipse cx='660' cy='540' rx='24' ry='2.5' fill='%23ffffff' opacity='0.4'/><ellipse cx='520' cy='580' rx='32' ry='3' fill='%23ffffff' opacity='0.3'/></svg>");
+  /* River, banks, and hills all converge at the same vanishing point (600,400-410)
+     so the valley reads cleanly at every aspect ratio. */
+  --hero-scene: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600' preserveAspectRatio='xMidYMax slice'><defs><linearGradient id='midHill' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%238fc99c'/><stop offset='1' stop-color='%234f8a62'/></linearGradient><linearGradient id='hill' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%237ec486'/><stop offset='0.7' stop-color='%234e9462'/><stop offset='1' stop-color='%23377953'/></linearGradient><linearGradient id='bank' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23ecd296'/><stop offset='1' stop-color='%23bb8d4d'/></linearGradient><linearGradient id='water' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%23bee1ef'/><stop offset='0.45' stop-color='%233aa3d6'/><stop offset='1' stop-color='%231b6ea2'/></linearGradient></defs><path d='M0 600 L 0 430 C 120 400 260 380 400 392 C 500 400 560 404 600 406 C 640 404 700 400 800 392 C 940 380 1080 400 1200 430 L 1200 600 Z' fill='url(%23midHill)' opacity='0.85'/><path d='M0 600 L 0 440 C 80 400 180 372 280 362 C 380 358 470 374 540 392 C 575 402 590 404 597 404 L 600 400 L 600 600 Z' fill='url(%23hill)'/><path d='M1200 600 L 1200 440 C 1120 400 1020 372 920 362 C 820 358 730 374 660 392 C 625 402 610 404 603 404 L 600 400 L 600 600 Z' fill='url(%23hill)'/><ellipse cx='230' cy='460' rx='80' ry='9' fill='%23000' opacity='0.10'/><ellipse cx='970' cy='460' rx='80' ry='9' fill='%23000' opacity='0.10'/><ellipse cx='420' cy='510' rx='60' ry='8' fill='%23000' opacity='0.10'/><ellipse cx='780' cy='510' rx='60' ry='8' fill='%23000' opacity='0.10'/><path d='M596 410 C 592 452 558 512 472 562 L 365 600 L 245 600 Q 290 580 350 562 L 444 492 C 512 442 564 420 596 410 Z' fill='url(%23bank)'/><path d='M604 410 C 608 452 642 512 728 562 L 835 600 L 955 600 Q 910 580 850 562 L 756 492 C 688 442 636 420 604 410 Z' fill='url(%23bank)'/><path d='M596 410 L 604 410 C 608 452 642 512 728 562 L 835 600 L 365 600 L 472 562 C 558 512 592 452 596 410 Z' fill='url(%23water)'/><ellipse cx='600' cy='424' rx='5' ry='1' fill='%23ffffff' opacity='0.55'/><ellipse cx='596' cy='452' rx='11' ry='1.5' fill='%23ffffff' opacity='0.5'/><ellipse cx='604' cy='486' rx='19' ry='2' fill='%23ffffff' opacity='0.45'/><ellipse cx='590' cy='522' rx='29' ry='2.5' fill='%23ffffff' opacity='0.4'/><ellipse cx='612' cy='560' rx='42' ry='3' fill='%23ffffff' opacity='0.4'/><ellipse cx='600' cy='590' rx='58' ry='3.5' fill='%23ffffff' opacity='0.35'/></svg>");
 }
 
 .hero {
@@ -453,36 +455,38 @@ h4 { font-size: var(--fs-lg); }
 
 .hero__notes svg {
   position: absolute;
-  opacity: 0.06;
   fill: currentColor;
   color: var(--color-white);
 }
 
+/* Treble clef — top-left, drifting into the sky above the headline */
 .hero__notes svg:nth-child(1) {
-  top: 14%;
-  right: 6%;
-  width: 96px;
-  height: 96px;
-  transform: rotate(-12deg);
-  opacity: 0.07;
+  top: 12%;
+  left: 6%;
+  width: 88px;
+  height: 88px;
+  transform: rotate(-10deg);
+  opacity: 0.14;
 }
 
+/* Quarter note — right side, sitting clear of the sun glow */
 .hero__notes svg:nth-child(2) {
-  top: 28%;
-  right: 26%;
-  width: 50px;
-  height: 50px;
-  transform: rotate(18deg);
-  opacity: 0.05;
+  top: 50%;
+  right: 7%;
+  width: 44px;
+  height: 44px;
+  transform: rotate(14deg);
+  opacity: 0.12;
 }
 
+/* Double eighth notes — mid-left, between headline and buttons */
 .hero__notes svg:nth-child(3) {
-  top: 42%;
-  right: 4%;
-  width: 28px;
-  height: 28px;
-  transform: rotate(-26deg);
-  opacity: 0.04;
+  top: 64%;
+  left: 4%;
+  width: 56px;
+  height: 56px;
+  transform: rotate(-18deg);
+  opacity: 0.11;
 }
 
 /* Wavy bottom edge */
@@ -1046,23 +1050,27 @@ h4 { font-size: var(--fs-lg); }
 
 .page-header .hero__notes svg:nth-child(1) {
   top: 14%;
-  right: 7%;
-  width: 72px;
-  height: 72px;
+  left: 6%;
+  width: 56px;
+  height: 56px;
+  opacity: 0.13;
 }
 
 .page-header .hero__notes svg:nth-child(2) {
-  top: 36%;
-  right: 24%;
-  width: 38px;
-  height: 38px;
+  top: 50%;
+  right: 7%;
+  width: 32px;
+  height: 32px;
+  opacity: 0.11;
 }
 
 .page-header .hero__notes svg:nth-child(3) {
-  top: 56%;
-  right: 5%;
-  width: 22px;
-  height: 22px;
+  top: 22%;
+  right: 12%;
+  left: auto;
+  width: 36px;
+  height: 36px;
+  opacity: 0.10;
 }
 
 .page-header h1 {
@@ -1669,8 +1677,30 @@ h4 { font-size: var(--fs-lg); }
     padding: var(--space-2xl) 0 calc(var(--space-2xl) + 24px);
   }
 
-  .hero__notes {
-    display: none;
+  /* Shrink and reposition notes for narrow screens so they sit clear of the headline */
+  .hero__notes svg:nth-child(1) {
+    top: 4%;
+    left: 4%;
+    width: 56px;
+    height: 56px;
+    opacity: 0.13;
+  }
+
+  .hero__notes svg:nth-child(2) {
+    top: 30%;
+    right: 4%;
+    width: 32px;
+    height: 32px;
+    opacity: 0.11;
+  }
+
+  .hero__notes svg:nth-child(3) {
+    top: 18%;
+    right: 18%;
+    left: auto;
+    width: 36px;
+    height: 36px;
+    opacity: 0.10;
   }
 
   .hero::before {
