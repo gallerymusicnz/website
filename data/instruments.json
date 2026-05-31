@@ -95,6 +95,13 @@
       "tag": "3+ years learning",
       "free": true,
       "show_on_home": false
+    },
+    {
+      "name": "Ukulele",
+      "description": "An easy introduction to strumming and playing simple songs together. ",
+      "tag": "6.5+",
+      "free": false,
+      "show_on_home": false
     }
   ]
 }
