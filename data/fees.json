@@ -4,7 +4,7 @@
   "fee_box": {
     "label": "Annual Tuition Fee",
     "amount": "$210",
-    "period": "per student, per year (covers all four terms)",
+    "period": "per class, per year (covers all four terms)",
     "items": [
       "One instrument class per week (30 mins)",
       "All term dates included in the fee",
