@@ -73,6 +73,14 @@
       "show_on_home": true
     },
     {
+      "name": "Ukulele",
+      "emoji": "🎵",
+      "description": "An fun, gentle class that gives little ones an easy introduction to strumming and playing simple songs together. ",
+      "tag": "Ages 6.5+",
+      "free": false,
+      "show_on_home": false
+    },
+    {
       "name": "Choir",
       "emoji": "😀",
       "description": "Singing is good for the brain, lungs and heart!  Sing together in a fun, supportive group to develop musicality and ensemble skills. Open to all children, whether learning an instrument at Gallery or not.",
@@ -94,14 +102,6 @@
       "description": "The Gallery Community Orchestra is open to all ages, and it's free. Gallery Orchestra is for players with approximately 3 years of prior tuition, and for ages 7 - 99! See our Orchestra page for more details.",
       "tag": "Free! 3+ years learning",
       "free": true,
-      "show_on_home": false
-    },
-    {
-      "name": "Ukulele",
-      "emoji": "🎵",
-      "description": "An fun, gentle class that gives little ones an easy introduction to strumming and playing simple songs together. ",
-      "tag": "Ages 6.5+",
-      "free": false,
       "show_on_home": false
     }
   ]
