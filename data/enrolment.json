@@ -4,7 +4,7 @@
   "steps": [
     {
       "number": "1",
-      "heading": "Check available classes",
+      "heading": "Find out what classes what we offer",
       "body": "Review our classes list and check your child's age and experience. ",
       "link_text": "View classes",
       "link_url": "classes.html"
@@ -22,25 +22,25 @@
     {
       "number": "4",
       "heading": "Start Saturday lessons!",
-      "body": "Arrive at Dyer Street School, 9 Dyer Street, Lower Hutt at your class start time. Please be ready outside the classroom a few minutes early."
+      "body": "Arrive at Dyer Street School, 9 Dyer Street, Epuni, Lower Hutt before your class start time. Please be ready outside the classroom a few minutes early."
     }
   ],
   "contact_box": {
     "heading": "Get in touch",
     "items": [
       {
-        "icon": "\u2709",
+        "icon": "✉",
         "label": "Email",
         "value": "gallerymusiccentre@gmail.com",
         "url": "mailto:gallerymusiccentre@gmail.com"
       },
       {
-        "icon": "\u26b2",
+        "icon": "⚲",
         "label": "Location",
-        "value": "Dyer Street School\n9 Dyer Street, Lower Hutt"
+        "value": "Dyer Street School\n9 Dyer Street, Epuni, Lower Hutt"
       },
       {
-        "icon": "\ud83d\udcc5",
+        "icon": "📅",
         "label": "When",
         "value": "Saturday mornings during school terms"
       }
