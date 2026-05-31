@@ -51,8 +51,8 @@
     {
       "name": "Recorder",
       "emoji": "🎵",
-      "description": "A wonderful first instrument. Students learn music reading, develop finger coordination, and enjoy ensemble playing with others.",
-      "tag": "Ages 6.5+",
+      "description": "A wonderful first instrument. Students learn music reading, develop finger coordination, and enjoy ensemble playing with others. Only c.$40 for book and instrument!",
+      "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
     },
@@ -75,15 +75,15 @@
     {
       "name": "Choir",
       "emoji": "😀",
-      "description": "Singing is good for the brain, lungs and heart!  Singing together in a fun, supportive group and develop your musicality and ensemble skills. Open to all children, whether learning an instrument at Gallery or not.",
+      "description": "Singing is good for the brain, lungs and heart!  Singing together in a fun, supportive group will develop musicality and ensemble skills. Open to all children, whether learning an instrument at Gallery or not.",
       "tag": "Free!",
       "free": true,
       "show_on_home": true
     },
     {
-      "name": "Pat Sviatko Ensemble",
+      "name": "Ensemble",
       "emoji": "🎶",
-      "description": "Enjoy playing beautiful music with others! The Pat Sviatko Ensemble welcomes players who have learnt an orchestral instrument for 1 year or more: cello, violin, trumpet, flute, viola, percussion, recorder. Develop valuable skills in ensemble playing, music reading and performance.",
+      "description": "Enjoy playing beautiful music with others! The Pat Sviatko Ensemble welcomes players who have learnt an orchestral instrument (wind, strings or brass) for 1 year or more: cello, violin, trumpet, flute, viola, percussion, recorder, double bass, oboe, clarinet, trombone, french horn... Develop valuable skills in ensemble playing, orchestral music reading, and performance.",
       "tag": "1+ years learning",
       "free": true,
       "show_on_home": false
@@ -91,8 +91,8 @@
     {
       "name": "Orchestra",
       "emoji": "🎶",
-      "description": "The Gallery Community Orchestra is open to all ages, and it's free. Ensemble (Junior Orchestra) is for players with approximately 1 year of prior tuition; Orchestra is for players with approximately 3 years of prior tuition. See our Orchestra page for more details.",
-      "tag": "1+ years learning",
+      "description": "The Gallery Community Orchestra is open to all ages, and it's free. For ages 7 - 99! Gallery Orchestra is for players with approximately 3 years of prior tuition. See our Orchestra page for more details.",
+      "tag": "3+ years learning",
       "free": true,
       "show_on_home": false
     }
