@@ -98,8 +98,9 @@
     },
     {
       "name": "Ukulele",
-      "description": "An easy introduction to strumming and playing simple songs together. ",
-      "tag": "6.5+",
+      "emoji": "violin ",
+      "description": "An fun, gentle class that gives little ones an easy introduction to strumming and playing simple songs together. ",
+      "tag": "Ages 6.5+",
       "free": false,
       "show_on_home": false
     }
