@@ -4,11 +4,11 @@
   "fee_box": {
     "label": "Annual Tuition Fee",
     "amount": "$210",
-    "period": "per student, per year (all four terms)",
+    "period": "per student, per year (covers all four terms)",
     "items": [
       "One instrument class per week (30 mins)",
       "All term dates included in the fee",
-      "Choir and ensemble are free — no extra charge",
+      "Choir, orchestra and ensemble are free — no extra charge",
       "Subsidised by the Ministry of Education",
       "Instruments available for hire for some classes"
     ]
@@ -20,7 +20,7 @@
     },
     {
       "heading": "Enrolling and start dates",
-      "body": "Enrolments for new and returning students open in term 4 for the following year. All classes start at the beginning of the school year. There may be some places available for music basics and the choir during the year. "
+      "body": "Enrolments for new and returning students open in term 4 for the following year. All classes start at the beginning of the school year. There may be some places available for music basics, orchestra, ensemble and choir during the year. "
     },
     {
       "heading": "Waitlists ",
