@@ -11,7 +11,7 @@
     {
       "name": "Violin",
       "emoji": "🎻",
-      "description": "Learn violin in a supportive group setting. Students develop good bowing technique, posture, and music reading skills while playing together with their peers.",
+      "description": "Learn violin in a supportive group setting. Students develop good bowing technique, posture, and music reading skills while playing together with their peers. Violins are available for hire ($80 per year).",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
@@ -27,7 +27,7 @@
     {
       "name": "Keyboard",
       "emoji": "🎹",
-      "description": "Build keyboard skills including reading music, playing melodies, and developing finger coordination. A popular class — waitlists may apply.",
+      "description": "Build keyboard skills including reading music, playing tunes, and developing finger coordination. A popular class — waitlists may apply.",
       "tag": "Ages 7+",
       "free": false,
       "show_on_home": true
