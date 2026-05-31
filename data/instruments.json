@@ -78,7 +78,7 @@
       "description": "An fun, gentle class that gives little ones an easy introduction to strumming and playing simple songs together. ",
       "tag": "Ages 6.5+",
       "free": false,
-      "show_on_home": false
+      "show_on_home": true
     },
     {
       "name": "Choir",
@@ -94,7 +94,7 @@
       "description": "Enjoy playing beautiful music with others! The Pat Sviatko Ensemble welcomes players who have learnt an orchestral instrument (wind, strings or brass) for 1 year or more, at Gallery or elsewhere: cello, violin, trumpet, flute, viola, percussion, recorder, double bass, oboe, clarinet, trombone, french horn... Develop valuable skills in ensemble playing, orchestral music reading, and performance.",
       "tag": "Free! 1+ years learning",
       "free": true,
-      "show_on_home": false
+      "show_on_home": true
     },
     {
       "name": "Orchestra",
@@ -102,7 +102,7 @@
       "description": "The Gallery Community Orchestra is open to all ages, and it's free. Gallery Orchestra is for players with approximately 3 years of prior tuition, and for ages 7 - 99! See our Orchestra page for more details.",
       "tag": "Free! 3+ years learning",
       "free": true,
-      "show_on_home": false
+      "show_on_home": true
     }
   ]
 }
