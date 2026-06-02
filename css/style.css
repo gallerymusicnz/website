@@ -1161,7 +1161,6 @@ h4 { font-size: var(--fs-lg); }
 
 .gform-wrapper {
   border-radius: var(--radius-lg);
-  overflow: hidden;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
