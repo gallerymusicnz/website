@@ -73,7 +73,8 @@
     if (!container || !data.instruments) return;
     var featured = data.instruments.filter(function (i) { return i.show_on_home; });
     container.innerHTML = featured.map(function (i) {
-      return '<a href="classes.html" class="card' + (i.free ? ' card--free' : '') + '"><div class="card__icon">' + i.emoji + '</div><h3>' + escapeHTML(i.name) + '</h3><span class="card__tag">' + escapeHTML(i.tag) + '</span></a>';
+      var href = i.name === 'Orchestra' ? 'communityorchestra.html' : 'classes.html';
+      return '<a href="' + href + '" class="card' + (i.free ? ' card--free' : '') + '"><div class="card__icon">' + i.emoji + '</div><h3>' + escapeHTML(i.name) + '</h3><span class="card__tag">' + escapeHTML(i.tag) + '</span></a>';
     }).join('');
   }
 
