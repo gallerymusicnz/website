@@ -82,7 +82,7 @@
     var container = document.getElementById('class-instruments');
     if (!container || !data.instruments) return;
     container.innerHTML = data.instruments.map(function (i) {
-      var orchestraLink = i.name === 'Orchestra' ? ' <a href="orchestra.html">Learn more about our community orchestra &rarr;</a>' : '';
+      var orchestraLink = i.name === 'Orchestra' ? ' <a href="communityorchestra.html">Learn more about our community orchestra &rarr;</a>' : '';
       return '<div class="card' + (i.free ? ' card--free' : '') + '"><div class="card__icon">' + i.emoji + '</div><h3>' + escapeHTML(i.name) + '</h3><p>' + escapeHTML(i.description) + orchestraLink + '</p><span class="card__tag">' + escapeHTML(i.tag) + '</span></div>';
     }).join('');
   }
