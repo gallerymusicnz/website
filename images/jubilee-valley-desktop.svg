@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" fill="none">
+  <!-- An impression of the valley: unequal hills, a broad plain and river. -->
+  <path fill="#a4c2c8" d="M0 88C112 62 170 80 258 112S400 136 505 108 642 62 742 80 866 90 962 60 1140 42 1260 24L1440 0V224H0Z"/>
+  <path fill="#91ad9e" d="M430 200C570 164 686 170 806 138S970 64 1080 62 1300 30 1440 22V224H430Z"/>
+  <path fill="#568a92" d="M0 90C118 106 200 150 310 164S430 178 520 200H0Z"/>
+  <path fill="#1a5c6b" d="M892 200C1020 160 1086 140 1170 90S1330 20 1440 0V224H892Z"/>
+  <path fill="#bdc9ab" d="M0 200H1440V320H0Z"/>
+  <path fill="#fdf3e0" d="M906 200C930 212 1044 212 1048 224 1058 241 916 246 861 270 825 286 854 304 898 320H1160C1080 294 1016 280 1034 264 1052 248 1155 241 1110 226 1080 215 950 211 925 200Z"/>
+  <path fill="#568a92" d="M925 200C953 212 1084 212 1110 226 1155 241 1052 248 1034 264 1016 280 1080 294 1160 320H1440V270C1300 260 1170 253 1162 241 1152 229 1194 224 1138 218 1070 211 958 210 940 200Z"/>
+  <!-- A quiet musical rhythm in the water, rather than literal notes. -->
+  <g stroke="#fdf3e0" stroke-width="1.6" stroke-linecap="round" opacity=".75">
+    <path d="M1132 274C1200 266 1260 298 1334 286"/>
+    <path d="M1148 283C1210 278 1278 310 1352 296"/>
+    <path d="M1166 293C1228 290 1292 320 1370 306"/>
+  </g>
+</svg>
