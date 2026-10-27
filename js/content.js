@@ -5,7 +5,7 @@
    ============================================ */
 
 (function () {
-  const DATA = 'data/';
+  const DATA = new URL('../data/', document.currentScript.src).href;
 
   function fetchJSON(file) {
     return fetch(DATA + file).then(function (r) {
