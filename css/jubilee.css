@@ -60,11 +60,6 @@
   font-size:.8rem;
   margin-top:8px
 }
-.jubilee-page .jubilee-hero .date-line {
-  font-size:.875rem;
-  font-weight:600;
-  margin:24px 0 0
-}
 .jubilee-page .facts {
   position:relative;
   margin-top:-30px;
@@ -101,42 +96,15 @@
   color:var(--color-text-light);
   margin-top:4px
 }
-.jubilee-page .intro {
-  max-width:750px;
-  margin-bottom:32px
-}
-.jubilee-page .intro h2, .jubilee-page .copy h2 {
+.jubilee-page .copy h2 {
   margin-bottom:16px
 }
-.jubilee-page .intro p, .jubilee-page .copy p {
+.jubilee-page .copy p {
   color:var(--color-text-light);
   margin-bottom:16px
 }
-.jubilee-page .jubilee-cards {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px
-}
-.jubilee-page .jubilee-card {
-  padding:28px;
-  border:1px solid var(--color-border);
-  border-radius:var(--radius-md);
-  background:white;
-  box-shadow:var(--shadow-sm)
-}
-.jubilee-page .jubilee-card .symbol {
-  font-size:1.5rem;
-  color:var(--color-primary);
-  margin-bottom:16px;
-  display:block
-}
-.jubilee-page .jubilee-card h3 {
-  font-size:1.25rem;
-  margin-bottom:12px
-}
-.jubilee-page .jubilee-card p {
-  color:var(--color-text-light);
-  font-size:.95rem
+.jubilee-page #concert .copy {
+  max-width:750px
 }
 .jubilee-page .two-col {
   display:grid;
@@ -167,48 +135,8 @@
   text-decoration:underline;
   text-underline-offset:3px
 }
-.jubilee-page .concert-panel {
-  background:var(--color-primary);
-  padding:40px;
-  border-radius:var(--radius-lg);
-  color:white
-}
-.jubilee-page .concert-panel .eyebrow {
-  color:#f4d493
-}
-.jubilee-page .concert-panel .time {
-  font-family:var(--font-heading);
-  font-weight:800;
-  font-size:5rem;
-  line-height:1.2
-}
-.jubilee-page .concert-panel .free {
-  display:inline-block;
-  background:var(--color-accent-light);
-  color:#134a56;
-  border-radius:6px;
-  padding:5px 12px;
-  font-size:.75rem;
-  font-weight:700;
-  margin:12px 0 24px
-}
 .jubilee-page .participate {
   align-items:start
-}
-.jubilee-page .tags {
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  list-style:none;
-  margin:24px 0
-}
-.jubilee-page .tags li {
-  font-size:.8rem;
-  padding:6px 12px;
-  background:var(--color-primary-light);
-  color:var(--color-primary);
-  border-radius:6px;
-  font-weight:600
 }
 .jubilee-page .registration {
   padding:30px;
@@ -236,10 +164,6 @@
   display:block;
   color:var(--color-text)
 }
-.jubilee-page .registration .note {
-  font-size:.8rem;
-  margin-top:16px
-}
 .jubilee-page .memory {
   background:var(--color-primary);
   color:white
@@ -266,12 +190,6 @@
 }
 .jubilee-page main section[id] {
   scroll-margin-top:85px
-}
-.jubilee-page .jubilee-hero .date-line {
-  display:inline-block;
-  background:#fdf3e0;
-  padding:8px 12px;
-  border-radius:6px
 }
 
 @media(max-width:900px){
@@ -321,12 +239,6 @@
 }
 .jubilee-page .fact:nth-child(2) {
   border:0
-}
-.jubilee-page .jubilee-cards {
-  grid-template-columns:1fr
-}
-.jubilee-page .concert-panel {
-  padding:32px
 }
 .jubilee-page .hero__buttons .btn {
   line-height:1.35
