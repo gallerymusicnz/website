@@ -1,4 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" fill="none">
+  <defs>
+    <g id="quarter" fill="currentColor">
+      <ellipse cx="10" cy="39" rx="9" ry="6" transform="rotate(-22 10 39)"/>
+      <path d="M16 5h4v33h-4z"/>
+    </g>
+    <g id="eighth" fill="currentColor">
+      <ellipse cx="10" cy="39" rx="9" ry="6" transform="rotate(-22 10 39)"/>
+      <path d="M16 3h4v35h-4zM20 3c0 9 19 10 10 25 2-10-10-10-10-15z"/>
+    </g>
+    <g id="paired" fill="currentColor">
+      <ellipse cx="10" cy="40" rx="9" ry="6" transform="rotate(-22 10 40)"/>
+      <ellipse cx="42" cy="33" rx="9" ry="6" transform="rotate(-22 42 33)"/>
+      <path d="M16 7 52 0v33h-4V9L20 15v24h-4z"/>
+    </g>
+  </defs>
   <!-- An impression of the valley: unequal hills, a broad plain and river. -->
   <path fill="#a4c2c8" d="M0 88C112 62 170 80 258 112S400 136 505 108 642 62 742 80 866 90 962 60 1140 42 1260 24L1440 0V224H0Z"/>
   <path fill="#91ad9e" d="M430 200C570 164 686 170 806 138S970 64 1080 62 1300 30 1440 22V224H430Z"/>
@@ -7,10 +22,19 @@
   <path fill="#bdc9ab" d="M0 200H1440V320H0Z"/>
   <path fill="#fdf3e0" d="M906 200C930 212 1044 212 1048 224 1058 241 916 246 861 270 825 286 854 304 898 320H1160C1080 294 1016 280 1034 264 1052 248 1155 241 1110 226 1080 215 950 211 925 200Z"/>
   <path fill="#568a92" d="M925 200C953 212 1084 212 1110 226 1155 241 1052 248 1034 264 1016 280 1080 294 1160 320H1440V270C1300 260 1170 253 1162 241 1152 229 1194 224 1138 218 1070 211 958 210 940 200Z"/>
-  <!-- A quiet musical rhythm in the water, rather than literal notes. -->
+  <!-- Flowing lines echo a musical phrase in the river. -->
   <g stroke="#fdf3e0" stroke-width="1.6" stroke-linecap="round" opacity=".75">
     <path d="M1132 274C1200 266 1260 298 1334 286"/>
     <path d="M1148 283C1210 278 1278 310 1352 296"/>
     <path d="M1166 293C1228 290 1292 320 1370 306"/>
+  </g>
+  <!-- Notes drift at uneven intervals across the valley; no extra landscape detail. -->
+  <g opacity=".9">
+    <use href="#paired" color="#1a5c6b" transform="translate(110 12) rotate(-12 26 23) scale(1.15)"/>
+    <use href="#eighth" color="#d4982a" transform="translate(354 86) rotate(12 16 22) scale(1.1)"/>
+    <use href="#quarter" color="#1a5c6b" transform="translate(650 10) rotate(-10 12 22)"/>
+    <use href="#paired" color="#fdf3e0" transform="translate(804 128) rotate(10 26 23)"/>
+    <use href="#eighth" color="#1a5c6b" transform="translate(1030 8) rotate(14 16 22)"/>
+    <use href="#paired" color="#fdf3e0" transform="translate(1280 116) rotate(-12 26 23) scale(1.15)"/>
   </g>
 </svg>

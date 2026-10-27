@@ -1,4 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 250" fill="none">
+  <defs>
+    <g id="quarter" fill="currentColor">
+      <ellipse cx="10" cy="39" rx="9" ry="6" transform="rotate(-22 10 39)"/>
+      <path d="M16 5h4v33h-4z"/>
+    </g>
+    <g id="eighth" fill="currentColor">
+      <ellipse cx="10" cy="39" rx="9" ry="6" transform="rotate(-22 10 39)"/>
+      <path d="M16 3h4v35h-4zM20 3c0 9 19 10 10 25 2-10-10-10-10-15z"/>
+    </g>
+    <g id="paired" fill="currentColor">
+      <ellipse cx="10" cy="40" rx="9" ry="6" transform="rotate(-22 10 40)"/>
+      <ellipse cx="42" cy="33" rx="9" ry="6" transform="rotate(-22 42 33)"/>
+      <path d="M16 7 52 0v33h-4V9L20 15v24h-4z"/>
+    </g>
+  </defs>
   <!-- Recomposed for phones so the valley and river survive at narrow widths. -->
   <path fill="#a4c2c8" d="M0 60C52 40 86 54 132 66S202 80 260 54 340 48 400 26L480 0V150H0Z"/>
   <path fill="#91ad9e" d="M106 148C182 118 216 122 270 96S342 54 390 58L480 26V150Z"/>
@@ -11,5 +26,12 @@
     <path d="M355 211C388 209 416 231 451 225"/>
     <path d="M364 220C395 218 427 241 460 234"/>
     <path d="M376 230C406 229 435 250 470 244"/>
+  </g>
+  <!-- Larger, fewer notes remain recognisable at phone widths. -->
+  <g opacity=".95">
+    <use href="#paired" color="#1a5c6b" transform="translate(36 10) rotate(-12 26 23) scale(.9)"/>
+    <use href="#eighth" color="#d4982a" transform="translate(166 57) rotate(12 16 22) scale(.9)"/>
+    <use href="#quarter" color="#1a5c6b" transform="translate(322 12) rotate(10 12 22) scale(.9)"/>
+    <use href="#paired" color="#fdf3e0" transform="translate(406 99) rotate(-10 26 23) scale(.85)"/>
   </g>
 </svg>

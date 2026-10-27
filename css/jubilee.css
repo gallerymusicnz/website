@@ -12,7 +12,7 @@
 .jubilee-page .jubilee-hero .hero__decor {
   top:auto;
   height:clamp(220px,22.222vw,380px);
-  background-image:url('/images/jubilee-valley-desktop.svg');
+  background-image:url('/images/jubilee-valley-desktop.svg?v=notes-1');
   background-position:center bottom;
   background-size:100% 100%
 }
@@ -234,7 +234,7 @@
 }
 .jubilee-page .jubilee-hero .hero__decor {
   height:220px;
-  background-image:url('/images/jubilee-valley-mobile.svg')
+  background-image:url('/images/jubilee-valley-mobile.svg?v=notes-1')
 }
 .jubilee-page .jubilee-hero .container, .jubilee-page .two-col {
   grid-template-columns:1fr
