@@ -2,7 +2,7 @@
 /* The abstract hero is a Jubilee-only trial; shared heroes are unchanged. */
 .jubilee-page .jubilee-hero {
   padding:64px 0 clamp(260px,calc(22.222vw + 40px),420px);
-  background:var(--color-accent-light);
+  background:linear-gradient(180deg,#8ed1ef 0%,#b9e5f5 58%,#d9f1f8 100%);
   color:var(--color-primary-dark)
 }
 .jubilee-page .jubilee-hero::before,
@@ -12,7 +12,7 @@
 .jubilee-page .jubilee-hero .hero__decor {
   top:auto;
   height:clamp(220px,22.222vw,380px);
-  background-image:url('/images/jubilee-valley-desktop.svg?v=notes-1');
+  background-image:url('/images/jubilee-valley-desktop.svg?v=bright-1');
   background-position:center bottom;
   background-size:100% 100%
 }
@@ -234,7 +234,7 @@
 }
 .jubilee-page .jubilee-hero .hero__decor {
   height:220px;
-  background-image:url('/images/jubilee-valley-mobile.svg?v=notes-1')
+  background-image:url('/images/jubilee-valley-mobile.svg?v=bright-1')
 }
 .jubilee-page .jubilee-hero .container, .jubilee-page .two-col {
   grid-template-columns:1fr
