@@ -1,0 +1,350 @@
+/* Jubilee content styles; shared layout lives in style.css. */
+.jubilee-page .jubilee-hero {
+  padding:64px 0 90px
+}
+.jubilee-page .jubilee-hero .container {
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:60px;
+  align-items:center
+}
+.jubilee-page .jubilee-hero h1 {
+  color:#134a56;
+  font-size:clamp(2.5rem,4.5vw,3.8rem);
+  text-shadow:none;
+  max-width:700px
+}
+.jubilee-page .jubilee-hero h1 span {
+  display:block
+}
+.jubilee-page .jubilee-hero p {
+  color:#163e48;
+  text-shadow:none;
+  font-size:1.125rem;
+  max-width:620px
+}
+.jubilee-page .eyebrow {
+  font-size:.75rem!important;
+  letter-spacing:.14em;
+  font-weight:700;
+  text-transform:uppercase;
+  color:var(--color-primary);
+  margin-bottom:16px!important
+}
+.jubilee-page .medal {
+  width:280px;
+  aspect-ratio:1;
+  margin:auto;
+  border-radius:50%;
+  background:#fdf3e0;
+  border:10px solid #ecd49e;
+  outline:1px solid #d4982a;
+  outline-offset:-22px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:#134a56;
+  box-shadow:var(--shadow-md)
+}
+.jubilee-page .medal strong {
+  font-family:var(--font-heading);
+  font-size:112px;
+  line-height:1
+}
+.jubilee-page .medal span {
+  letter-spacing:.3em;
+  font-weight:700;
+  font-size:.8rem;
+  margin-top:8px
+}
+.jubilee-page .jubilee-hero .date-line {
+  font-size:.875rem;
+  font-weight:600;
+  margin:24px 0 0
+}
+.jubilee-page .facts {
+  position:relative;
+  margin-top:-30px;
+  z-index:3;
+  display:grid;
+  grid-template-columns:1fr 1fr 1.5fr 1fr;
+  background:white;
+  border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow-sm);
+  padding:24px
+}
+.jubilee-page .fact {
+  padding:0 22px;
+  border-right:1px solid var(--color-border)
+}
+.jubilee-page .fact:last-child {
+  border:0
+}
+.jubilee-page .fact dt {
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  color:var(--color-primary);
+  font-weight:700;
+  margin-bottom:6px
+}
+.jubilee-page .fact dd {
+  font-size:.9rem;
+  line-height:1.5
+}
+.jubilee-page .fact small {
+  display:block;
+  color:var(--color-text-light);
+  margin-top:4px
+}
+.jubilee-page .intro {
+  max-width:750px;
+  margin-bottom:32px
+}
+.jubilee-page .intro h2, .jubilee-page .copy h2 {
+  margin-bottom:16px
+}
+.jubilee-page .intro p, .jubilee-page .copy p {
+  color:var(--color-text-light);
+  margin-bottom:16px
+}
+.jubilee-page .jubilee-cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px
+}
+.jubilee-page .jubilee-card {
+  padding:28px;
+  border:1px solid var(--color-border);
+  border-radius:var(--radius-md);
+  background:white;
+  box-shadow:var(--shadow-sm)
+}
+.jubilee-page .jubilee-card .symbol {
+  font-size:1.5rem;
+  color:var(--color-primary);
+  margin-bottom:16px;
+  display:block
+}
+.jubilee-page .jubilee-card h3 {
+  font-size:1.25rem;
+  margin-bottom:12px
+}
+.jubilee-page .jubilee-card p {
+  color:var(--color-text-light);
+  font-size:.95rem
+}
+.jubilee-page .two-col {
+  display:grid;
+  grid-template-columns:1.25fr 1fr;
+  gap:64px;
+  align-items:center
+}
+.jubilee-page .details {
+  list-style:none;
+  margin:24px 0
+}
+.jubilee-page .details li {
+  margin:12px 0;
+  padding-left:25px;
+  position:relative
+}
+.jubilee-page .details li::before {
+  content:'✓';
+  position:absolute;
+  left:0;
+  color:var(--color-success)
+}
+.jubilee-page .details small {
+  display:block;
+  margin-top:4px
+}
+.jubilee-page .text-link {
+  text-decoration:underline;
+  text-underline-offset:3px
+}
+.jubilee-page .concert-panel {
+  background:var(--color-primary);
+  padding:40px;
+  border-radius:var(--radius-lg);
+  color:white
+}
+.jubilee-page .concert-panel .eyebrow {
+  color:#f4d493
+}
+.jubilee-page .concert-panel .time {
+  font-family:var(--font-heading);
+  font-weight:800;
+  font-size:5rem;
+  line-height:1.2
+}
+.jubilee-page .concert-panel .free {
+  display:inline-block;
+  background:var(--color-accent-light);
+  color:#134a56;
+  border-radius:6px;
+  padding:5px 12px;
+  font-size:.75rem;
+  font-weight:700;
+  margin:12px 0 24px
+}
+.jubilee-page .participate {
+  align-items:start
+}
+.jubilee-page .tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  list-style:none;
+  margin:24px 0
+}
+.jubilee-page .tags li {
+  font-size:.8rem;
+  padding:6px 12px;
+  background:var(--color-primary-light);
+  color:var(--color-primary);
+  border-radius:6px;
+  font-weight:600
+}
+.jubilee-page .registration {
+  padding:30px;
+  background:var(--color-bg-alt);
+  border:1px solid var(--color-border);
+  border-radius:var(--radius-md)
+}
+.jubilee-page .registration h3 {
+  font-size:1.25rem;
+  margin-bottom:12px
+}
+.jubilee-page .registration p, .jubilee-page .registration li {
+  font-size:.9rem;
+  color:var(--color-text-light)
+}
+.jubilee-page .registration ol {
+  padding-left:24px;
+  margin:24px 0
+}
+.jubilee-page .registration li {
+  padding-left:6px;
+  margin-bottom:18px
+}
+.jubilee-page .registration li strong {
+  display:block;
+  color:var(--color-text)
+}
+.jubilee-page .registration .note {
+  font-size:.8rem;
+  margin-top:16px
+}
+.jubilee-page .memory {
+  background:var(--color-primary);
+  color:white
+}
+.jubilee-page .memory h2 {
+  color:white;
+  max-width:620px;
+  margin-bottom:20px
+}
+.jubilee-page .memory p {
+  max-width:660px;
+  margin-bottom:24px
+}
+.jubilee-page .memory .eyebrow {
+  color:#f4d493
+}
+.jubilee-page .memory .btn {
+  background:white;
+  color:var(--color-primary)
+}
+.jubilee-page a:focus-visible, .jubilee-page button:focus-visible {
+  outline:3px solid #a76c0b;
+  outline-offset:4px
+}
+.jubilee-page main section[id] {
+  scroll-margin-top:85px
+}
+.jubilee-page .jubilee-hero .date-line {
+  display:inline-block;
+  background:#fdf3e0;
+  padding:8px 12px;
+  border-radius:6px
+}
+
+@media(max-width:900px){
+  .jubilee-page .jubilee-hero .container{
+  gap:24px
+}
+.jubilee-page .medal {
+  width:220px
+}
+.jubilee-page .medal strong {
+  font-size:90px
+}
+.jubilee-page .two-col {
+  gap:32px
+}
+.jubilee-page .facts {
+  padding:20px 8px
+}
+.jubilee-page .fact {
+  padding:0 14px
+}
+
+}
+
+@media(max-width:767px){
+  .jubilee-page .jubilee-hero{
+  padding:40px 0 60px
+}
+.jubilee-page .jubilee-hero .container, .jubilee-page .two-col {
+  grid-template-columns:1fr
+}
+.jubilee-page .medal {
+  width:180px
+}
+.jubilee-page .medal strong {
+  font-size:68px
+}
+.jubilee-page .medal span {
+  font-size:.65rem
+}
+.jubilee-page .jubilee-hero .container {
+  gap:32px
+}
+.jubilee-page .facts {
+  grid-template-columns:1fr 1fr;
+  gap:24px 0
+}
+.jubilee-page .fact:nth-child(2) {
+  border:0
+}
+.jubilee-page .jubilee-cards {
+  grid-template-columns:1fr
+}
+.jubilee-page .concert-panel {
+  padding:32px
+}
+.jubilee-page .hero__buttons .btn {
+  line-height:1.35
+}
+.jubilee-page .registration {
+  padding:24px
+}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+  html:has(.jubilee-page){
+  scroll-behavior:auto
+}
+.jubilee-page *, .jubilee-page *::before, .jubilee-page *::after {
+  transition:none!important;
+  animation:none!important
+}
+
+}
+
