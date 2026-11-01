@@ -1,20 +1,8 @@
 /* Jubilee content styles; shared layout lives in style.css. */
-/* The abstract hero is a Jubilee-only trial; shared heroes are unchanged. */
+/* Shared artwork is defined in header.css. */
 .jubilee-page .jubilee-hero {
   padding:64px 0 clamp(260px,calc(22.222vw + 40px),420px);
-  background:linear-gradient(180deg,#8ed1ef 0%,#b9e5f5 58%,#d9f1f8 100%);
   color:var(--color-primary-dark)
-}
-.jubilee-page .jubilee-hero::before,
-.jubilee-page .jubilee-hero::after {
-  display:none
-}
-.jubilee-page .jubilee-hero .hero__decor {
-  top:auto;
-  height:clamp(220px,22.222vw,380px);
-  background-image:url('/images/jubilee-valley-desktop.svg?v=bright-1');
-  background-position:center bottom;
-  background-size:100% 100%
 }
 .jubilee-page .jubilee-hero .container {
   position:relative;
@@ -234,10 +222,6 @@
 @media(max-width:767px){
   .jubilee-page .jubilee-hero{
   padding:36px 0 240px
-}
-.jubilee-page .jubilee-hero .hero__decor {
-  height:220px;
-  background-image:url('/images/jubilee-valley-mobile.svg?v=bright-1')
 }
 .jubilee-page .jubilee-hero .container, .jubilee-page .two-col {
   grid-template-columns:1fr

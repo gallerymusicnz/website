@@ -1,0 +1,57 @@
+/* Shared Gallery valley artwork, first introduced on the Jubilee page. */
+.hero,
+.page-header {
+  background: linear-gradient(180deg, #8ed1ef 0%, #b9e5f5 58%, #d9f1f8 100%);
+  color: var(--color-primary-dark);
+}
+.hero {
+  padding: 64px 0 clamp(260px, calc(22.222vw + 40px), 420px);
+}
+.page-header {
+  padding: 48px 0 clamp(200px, calc(22.222vw + 20px), 340px);
+}
+.hero::before,
+.hero::after,
+.page-header::before,
+.page-header::after,
+.hero__notes,
+.hero__wave,
+.page-header__wave {
+  display: none;
+}
+.hero__decor {
+  top: auto;
+  height: clamp(220px, 22.222vw, 380px);
+  background-image: url('/images/jubilee-valley-desktop.svg?v=bright-1');
+  background-position: center bottom;
+  background-size: cover;
+}
+.page-header .hero__decor {
+  height: clamp(180px, 22.222vw, 320px);
+}
+.hero:not(.jubilee-hero) .hero__content {
+  padding: 0;
+}
+.hero h1,
+.hero p,
+.page-header h1,
+.page-header p {
+  color: var(--color-primary-dark);
+  text-shadow: none;
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .hero {
+    padding: 36px 0 240px;
+  }
+  .page-header {
+    padding: 36px 0 calc(clamp(160px, 52.083vw, 220px) + 20px);
+  }
+  .hero__decor {
+    height: 220px;
+    background-image: url('/images/jubilee-valley-mobile.svg?v=bright-1');
+  }
+  .page-header .hero__decor {
+    height: clamp(160px, 52.083vw, 220px);
+  }
+}
