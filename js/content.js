@@ -94,7 +94,9 @@
     if (!el || !data.enabled) return;
     var content = escapeHTML(data.message || '');
     if (data.link_url && data.link_text) {
-      content += ' <a href="' + escapeHTML(data.link_url) + '" target="_blank" rel="noopener noreferrer">' + escapeHTML(data.link_text) + '</a>';
+      var external = new URL(data.link_url, window.location.href).origin !== window.location.origin;
+      var attributes = external ? ' target="_blank" rel="noopener noreferrer"' : '';
+      content += ' <a href="' + escapeHTML(data.link_url) + '"' + attributes + '>' + escapeHTML(data.link_text) + '</a>';
     }
     el.innerHTML = content;
     el.removeAttribute('hidden');
@@ -220,7 +222,7 @@
   /* --- Init: only load what the current page needs --- */
   document.addEventListener('DOMContentLoaded', function () {
     // Banner loads on every page
-    fetchJSON('banner.json').then(renderBanner).catch(console.error);
+    fetchJSON('banner.json?v=jubilee-2026').then(renderBanner).catch(console.error);
 
     var needs = {
       termDates:          !!(document.getElementById('term-dates-body') || document.getElementById('term-dates-note')),
